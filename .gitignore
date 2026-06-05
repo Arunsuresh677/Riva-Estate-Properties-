@@ -186,3 +186,5 @@ docker-compose.override.yml
 !.env.example
 !.env.sample
 !.env.template
+frontend/src/images/Newsletter
+frontend/src/images/Newsletter 
