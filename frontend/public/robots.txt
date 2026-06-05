@@ -5,4 +5,4 @@ Disallow: /signup
 Disallow: /forgot-password
 Disallow: /reset/
 
-Sitemap: https://buildestate.vercel.app/sitemap.xml
+Sitemap: https://rivaproperties.vercel.app/sitemap.xml

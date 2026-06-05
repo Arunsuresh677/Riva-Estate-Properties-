@@ -16,7 +16,7 @@ const apiClient = axios.create({
 // ── Request interceptor: attach auth token ──────────────────
 apiClient.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('buildestate_token');
+    const token = localStorage.getItem('rivaproperties_token');
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -30,7 +30,7 @@ apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      localStorage.removeItem('buildestate_token');
+      localStorage.removeItem('rivaproperties_token');
       // Optionally redirect to login
       // window.location.href = '/signin';
     }
@@ -130,8 +130,8 @@ export const aiAPI = {
     type?: string;
     category?: string;
   }) => {
-    const githubKey    = localStorage.getItem('buildestate_github_key');
-    const firecrawlKey = localStorage.getItem('buildestate_firecrawl_key');
+    const githubKey    = localStorage.getItem('rivaproperties_github_key');
+    const firecrawlKey = localStorage.getItem('rivaproperties_firecrawl_key');
     return apiClient.post('/ai/search', data, {
       headers: {
         ...(githubKey    && { 'X-Github-Key':    githubKey }),
@@ -141,8 +141,8 @@ export const aiAPI = {
   },
 
   locationTrends: (city: string) => {
-    const githubKey    = localStorage.getItem('buildestate_github_key');
-    const firecrawlKey = localStorage.getItem('buildestate_firecrawl_key');
+    const githubKey    = localStorage.getItem('rivaproperties_github_key');
+    const firecrawlKey = localStorage.getItem('rivaproperties_firecrawl_key');
     return apiClient.get(`/locations/${encodeURIComponent(city)}/trends`, {
       headers: {
         ...(githubKey    && { 'X-Github-Key':    githubKey }),
@@ -152,8 +152,8 @@ export const aiAPI = {
   },
 
   validateKeys: (keys?: { githubKey?: string; firecrawlKey?: string }) => {
-    const githubKey = (keys?.githubKey ?? localStorage.getItem('buildestate_github_key') ?? '').trim();
-    const firecrawlKey = (keys?.firecrawlKey ?? localStorage.getItem('buildestate_firecrawl_key') ?? '').trim();
+    const githubKey = (keys?.githubKey ?? localStorage.getItem('rivaproperties_github_key') ?? '').trim();
+    const firecrawlKey = (keys?.firecrawlKey ?? localStorage.getItem('rivaproperties_firecrawl_key') ?? '').trim();
 
     return apiClient.post('/ai/validate-keys', {}, {
       headers: {
@@ -166,14 +166,14 @@ export const aiAPI = {
 
 // Helpers to read/write user API keys in localStorage
 export const apiKeyStorage = {
-  getGithubKey:    ()    => localStorage.getItem('buildestate_github_key') || '',
-  getFirecrawlKey: ()    => localStorage.getItem('buildestate_firecrawl_key') || '',
-  setGithubKey:    (key: string) => localStorage.setItem('buildestate_github_key', key),
-  setFirecrawlKey: (key: string) => localStorage.setItem('buildestate_firecrawl_key', key),
-  hasKeys: () => !!(localStorage.getItem('buildestate_github_key') && localStorage.getItem('buildestate_firecrawl_key')),
+  getGithubKey:    ()    => localStorage.getItem('rivaproperties_github_key') || '',
+  getFirecrawlKey: ()    => localStorage.getItem('rivaproperties_firecrawl_key') || '',
+  setGithubKey:    (key: string) => localStorage.setItem('rivaproperties_github_key', key),
+  setFirecrawlKey: (key: string) => localStorage.setItem('rivaproperties_firecrawl_key', key),
+  hasKeys: () => !!(localStorage.getItem('rivaproperties_github_key') && localStorage.getItem('rivaproperties_firecrawl_key')),
   clear: () => {
-    localStorage.removeItem('buildestate_github_key');
-    localStorage.removeItem('buildestate_firecrawl_key');
+    localStorage.removeItem('rivaproperties_github_key');
+    localStorage.removeItem('rivaproperties_firecrawl_key');
   },
 };
 

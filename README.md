@@ -1,8 +1,8 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F97316,100:FB923C&height=220&section=header&text=BuildEstate&fontSize=80&fontColor=ffffff&fontAlignY=35&animation=fadeIn&desc=AI-Powered+Real+Estate+Platform&descAlignY=58&descSize=24" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F97316,100:FB923C&height=220&section=header&text=Riva Properties&fontSize=80&fontColor=ffffff&fontAlignY=35&animation=fadeIn&desc=AI-Powered+Real+Estate+Platform&descAlignY=58&descSize=24" width="100%"/>
 
 <div align="center">
 
-  <img src="./frontend/Assets/Logo.svg" alt="BuildEstate Logo" height="80" />
+  <img src="./frontend/Assets/Logo.svg" alt="Riva Properties Logo" height="80" />
 
 <br/><br/>
 
@@ -24,7 +24,7 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/%F0%9F%9A%80_Live_Demo-buildestate.vercel.app-4285F4?style=for-the-badge)](https://buildestate.vercel.app)
+[![Live Demo](https://img.shields.io/badge/%F0%9F%9A%80_Live_Demo-rivaproperties.vercel.app-4285F4?style=for-the-badge)](https://rivaproperties.vercel.app)
 [![Backend API](https://img.shields.io/badge/%E2%9A%99%EF%B8%8F_Backend_API-Render-46E3B7?style=for-the-badge)](https://real-estate-website-backend-zfu7.onrender.com)
 
 <br/>
@@ -44,7 +44,7 @@
 ## 📸 Platform Preview
 
 <div align="center">
-  <img src="./Image/Home.png" alt="BuildEstate Homepage" width="100%" />
+  <img src="./Image/Home.png" alt="Riva Properties Homepage" width="100%" />
 </div>
 
 <br/>
@@ -57,7 +57,7 @@
 
 |     | Section                                          |
 | :-: | :----------------------------------------------- |
-| 🧠  | [Why BuildEstate?](#-why-buildestate)            |
+| 🧠  | [Why Riva Properties?](#-why-rivaproperties)            |
 | 🤖  | [AI Property Hub](#-ai-property-hub)             |
 | 🌟  | [Features](#-features)                           |
 | 🏗️  | [Architecture](#%EF%B8%8F-architecture)          |
@@ -76,11 +76,11 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-## 🧠 Why BuildEstate?
+## 🧠 Why Riva Properties?
 
-Most real-estate aggregators show you generic listings. BuildEstate is different:
+Most real-estate aggregators show you generic listings. Riva Properties is different:
 
-| Problem | BuildEstate Solution |
+| Problem | Riva Properties Solution |
 |---|---|
 | Generic search results with mixed content | **Multi-source search** — 99acres, MagicBricks, Housing.com results deduplicated & ranked |
 | No AI intelligence in traditional portals | **GPT-4.1 analysis** — best-value picks, investment insights, red flag detection |
@@ -213,8 +213,8 @@ Users provide their **own free keys** in the browser. Keys are stored in localSt
 
 ```
 User's browser (localStorage)
-  buildestate_github_key   = "ghp_xxx"
-  buildestate_firecrawl_key = "fc-xxx"
+  rivaproperties_github_key   = "ghp_xxx"
+  rivaproperties_firecrawl_key = "fc-xxx"
          │
          │  X-Github-Key / X-Firecrawl-Key headers
          ▼
@@ -444,9 +444,9 @@ Edit `backend/.env.local` with your actual values:
 
 ```env
 # Essential Configuration (Required)
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/buildestate?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/rivaproperties?retryWrites=true&w=majority
 JWT_SECRET=your_super_secure_jwt_secret_here  # Generate with: openssl rand -base64 32
-ADMIN_EMAIL=admin@buildestate.com
+ADMIN_EMAIL=admin@rivaproperties.com
 ADMIN_PASSWORD=your_secure_admin_password
 
 # Email Service (Brevo SMTP - Free tier available)
@@ -619,7 +619,7 @@ npm run dev   # Starts admin panel on http://localhost:5174
 **🚀 Quick Deploy (5 minutes):**
 
 ### Live Deployments
-- **🌐 Frontend**: [buildestate.vercel.app](https://buildestate.vercel.app/) (Vercel)
+- **🌐 Frontend**: [rivaproperties.vercel.app](https://rivaproperties.vercel.app/) (Vercel)
 - **⚙️ Backend**: [real-estate-website-backend-zfu7.onrender.com](https://real-estate-website-backend-zfu7.onrender.com/) (Render)
 
 <details>

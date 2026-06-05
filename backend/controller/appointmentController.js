@@ -209,7 +209,7 @@ export const updateAppointmentStatus = async (req, res) => {
         const mailOptions = {
           from: process.env.EMAIL,
           to: recipientEmail,
-          subject: `Viewing Appointment ${status.charAt(0).toUpperCase() + status.slice(1)} - BuildEstate`,
+          subject: `Viewing Appointment ${status.charAt(0).toUpperCase() + status.slice(1)} - Riva Properties`,
           html: getEmailTemplate(appointment, status)
         };
 
@@ -295,7 +295,7 @@ export const scheduleViewing = async (req, res) => {
         const mailOptions = {
           from: process.env.EMAIL,
           to: recipientEmail,
-          subject: 'Viewing Scheduled - BuildEstate',
+          subject: 'Viewing Scheduled - Riva Properties',
           html: getSchedulingEmailTemplate(appointment, date, time, notes || message || '')
         };
         transporter.sendMail(mailOptions).catch(emailErr => {
@@ -355,7 +355,7 @@ export const cancelAppointment = async (req, res) => {
         const mailOptions = {
           from: process.env.EMAIL,
           to: recipientEmail,
-          subject: 'Appointment Cancelled - BuildEstate',
+          subject: 'Appointment Cancelled - Riva Properties',
           html: getEmailTemplate(appointment, 'cancelled')
         };
 
@@ -424,7 +424,7 @@ export const updateAppointmentMeetingLink = async (req, res) => {
         const mailOptions = {
           from: process.env.EMAIL,
           to: recipientEmail,
-          subject: 'Meeting Link Updated - BuildEstate',
+          subject: 'Meeting Link Updated - Riva Properties',
           html: getEmailTemplate(appointment, 'confirmed')
         };
 
