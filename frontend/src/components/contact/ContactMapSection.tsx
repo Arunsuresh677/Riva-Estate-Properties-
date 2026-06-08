@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactMapSection: React.FC = () => {
   return (
-    <section className="bg-[#F2EFE9] py-10 md:py-16">
+    <section className="bg-[#060D1F] py-10 md:py-16">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
         {/* On mobile: fixed height so map is usable; on desktop: wide aspect ratio */}
         <div className="relative h-[280px] sm:h-[340px] md:aspect-[1280/400] md:h-auto rounded-2xl overflow-hidden border border-[#E6E0DA] bg-gray-100">
