@@ -13,19 +13,16 @@ const slideshowImages = [
   rightFeatureCard,
 ];
 
-const headline = "Discover Your Dream Home with AI Intelligence";
-const words = headline.split(" ");
+const words = ["Discover", "Your", "Dream", "Home", "with", "AI", "Intelligence"];
 
 const HeroSection: React.FC = () => {
   const [current, setCurrent] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
 
-  // Parallax scroll
   const { scrollY } = useScroll();
   const bgY = useTransform(scrollY, [0, 600], ['0%', '30%']);
   const bgOpacity = useTransform(scrollY, [0, 480], [1, 0]);
 
-  // Auto-rotate every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(prev => (prev + 1) % slideshowImages.length);
@@ -34,18 +31,15 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-[#F8F6F6] pt-20 pb-32 overflow-hidden">
+    <section ref={sectionRef} className="relative pt-20 pb-32 overflow-hidden min-h-screen">
 
-      {/* Parallax Background Slideshow */}
-      <motion.div
-        style={{ y: bgY, opacity: bgOpacity }}
-        className="absolute inset-0 z-0"
-      >
+      {/* FULL BACKGROUND SLIDESHOW */}
+      <motion.div style={{ y: bgY, opacity: bgOpacity }} className="absolute inset-0 z-0">
         <AnimatePresence mode="sync">
           <motion.div
             key={current}
             initial={{ opacity: 0, scale: 1.05 }}
-            animate={{ opacity: 0.18, scale: 1.0 }}
+            animate={{ opacity: 1, scale: 1.0 }}
             exit={{ opacity: 0, scale: 1.02 }}
             transition={{ duration: 1.2, ease: [0.4, 0, 0.2, 1] }}
             className="absolute inset-0"
@@ -57,19 +51,20 @@ const HeroSection: React.FC = () => {
             />
           </motion.div>
         </AnimatePresence>
-        <div className="absolute inset-0 bg-[#F8F6F6]/75" />
+        {/* Dark overlay so text stays readable */}
+        <div className="absolute inset-0 bg-black/55" />
       </motion.div>
 
-      {/* Background decorative blurs */}
+      {/* Decorative blurs */}
       <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3], x: [0, 20, 0], y: [0, -20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute right-0 top-14 w-64 h-64 bg-[rgba(236,70,19,0.1)] rounded-full blur-[32px] z-0"
+        className="absolute right-0 top-14 w-64 h-64 bg-[rgba(236,70,19,0.15)] rounded-full blur-[32px] z-[1]"
       />
       <motion.div
         animate={{ scale: [1, 1.1, 1], opacity: [0.2, 0.4, 0.2], x: [0, -30, 0], y: [0, 30, 0] }}
         transition={{ duration: 10, delay: 1, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute left-[738px] bottom-22 w-64 h-64 bg-[rgba(254,215,170,0.2)] rounded-full blur-[32px] z-0"
+        className="absolute left-[738px] bottom-22 w-64 h-64 bg-[rgba(254,215,170,0.15)] rounded-full blur-[32px] z-[1]"
       />
 
       <div className="max-w-[1280px] mx-auto px-8 relative z-10">
@@ -82,16 +77,16 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-flex items-center gap-3 bg-[rgba(212,117,91,0.1)] border border-[rgba(212,117,91,0.2)] rounded-full px-4 py-2 mb-10"
+              className="inline-flex items-center gap-3 bg-white/10 border border-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-10"
             >
               <div className="w-2 h-2 bg-[#D4755B] rounded-full" />
-              <span className="font-manrope font-bold text-xs text-[#D4755B] uppercase tracking-wider">
+              <span className="font-manrope font-bold text-xs text-white uppercase tracking-wider">
                 AI-Powered Real Estate
               </span>
             </motion.div>
 
             {/* Staggered Headline */}
-            <h1 className="font-fraunces text-[56px] lg:text-[70px] leading-[1.1] text-[#111827] mb-8">
+            <h1 className="font-fraunces text-[56px] lg:text-[70px] leading-[1.1] text-white mb-8">
               {words.map((word, i) => (
                 <motion.span
                   key={i}
@@ -112,7 +107,7 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 1.2 }}
-              className="font-manrope font-light text-xl leading-7 text-[#4b5563] mb-12 max-w-[676px]"
+              className="font-manrope font-light text-xl leading-7 text-white/80 mb-12 max-w-[676px]"
             >
               Experience the future of real estate. Our proprietary AI curates the market's
               finest listings tailored specifically to your lifestyle, removing the noise from
@@ -128,14 +123,14 @@ const HeroSection: React.FC = () => {
             >
               <Link
                 to="/properties"
-                className="bg-[#D4755B] text-white font-manrope font-bold text-lg px-8 py-4 rounded-xl shadow-[0px_10px_15px_-3px_rgba(212,117,91,0.25)] hover:bg-[#B86851] transition-all hover:shadow-xl inline-flex items-center"
+                className="bg-[#D4755B] text-white font-manrope font-bold text-lg px-8 py-4 rounded-xl shadow-[0px_10px_15px_-3px_rgba(212,117,91,0.4)] hover:bg-[#B86851] transition-all hover:shadow-xl inline-flex items-center"
               >
                 Explore Properties
                 <span className="font-material-icons text-sm ml-2">arrow_forward</span>
               </Link>
               <Link
                 to="/ai-hub"
-                className="border-2 border-[#d1d5db] text-[#374151] font-manrope font-bold text-lg px-8 py-4 rounded-xl hover:border-[#D4755B] hover:text-[#D4755B] transition-all inline-flex items-center"
+                className="border-2 border-white/30 text-white font-manrope font-bold text-lg px-8 py-4 rounded-xl hover:border-[#D4755B] hover:text-[#D4755B] backdrop-blur-sm bg-white/10 transition-all inline-flex items-center"
               >
                 <span className="font-material-icons text-2xl text-[#D4755B] mr-2">smart_toy</span>
                 {import.meta.env.PROD ? 'AI Property Hub' : 'Try AI Search'}
@@ -151,22 +146,43 @@ const HeroSection: React.FC = () => {
             >
               <div className="flex -space-x-2">
                 {slideshowImages.slice(0, 3).map((img, i) => (
-                  <img key={i} src={img} alt="" className="w-10 h-10 rounded-full border-2 border-[#f8f6f6] object-cover" />
+                  <img key={i} src={img} alt="" className="w-10 h-10 rounded-full border-2 border-white/30 object-cover" />
                 ))}
-                <div className="w-10 h-10 bg-[#111827] rounded-full border-2 border-[#f8f6f6] flex items-center justify-center">
+                <div className="w-10 h-10 bg-[#111827] rounded-full border-2 border-white/30 flex items-center justify-center">
                   <span className="font-manrope font-bold text-xs text-white">+2k</span>
                 </div>
               </div>
-              <span className="font-manrope text-sm text-[#6b7280]">Join 2,000+ happy homeowners</span>
+              <span className="font-manrope text-sm text-white/70">Join 2,000+ happy homeowners</span>
+            </motion.div>
+
+            {/* Dot Indicators */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.8 }}
+              className="flex gap-2 mt-10"
+            >
+              {slideshowImages.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrent(i)}
+                  className={`transition-all duration-300 rounded-full h-2 ${
+                    i === current ? 'w-8 bg-[#D4755B]' : 'w-2 bg-white/40 hover:bg-white/70'
+                  }`}
+                />
+              ))}
             </motion.div>
           </div>
 
-          {/* Right — Slideshow Card */}
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-[0px_25px_50px_-12px_#e5e7eb]">
+          {/* Right — Property Card */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="relative"
+          >
+            <div className="rounded-2xl overflow-hidden shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.5)]">
               <div className="relative h-[625px]">
-
-                {/* Crossfade + Zoom Slideshow */}
                 <AnimatePresence mode="sync">
                   <motion.img
                     key={current}
@@ -179,21 +195,6 @@ const HeroSection: React.FC = () => {
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </AnimatePresence>
-
-                {/* Dot Indicators */}
-                <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-                  {slideshowImages.map((_, i) => (
-                    <button
-                      key={i}
-                      onClick={() => setCurrent(i)}
-                      className={`transition-all duration-300 rounded-full h-2 ${
-                        i === current
-                          ? 'w-8 bg-white'
-                          : 'w-2 bg-white/50 hover:bg-white/75'
-                      }`}
-                    />
-                  ))}
-                </div>
 
                 {/* Property Info Overlay */}
                 <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md bg-white/90 border border-white/20 rounded-xl p-4 shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] z-20">
@@ -220,10 +221,9 @@ const HeroSection: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>
