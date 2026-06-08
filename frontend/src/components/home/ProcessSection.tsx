@@ -2,14 +2,14 @@ import React from 'react';
 
 const ProcessSection: React.FC = () => {
   return (
-    <section className="bg-[#F0EBE5] py-24">
+    <section className="bg-[#0A1628] py-24">
       <div className="max-w-[1280px] mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           {/* Left - Sticky Content */}
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-24">
               <div className="font-space-mono text-sm text-[#D4755B] uppercase tracking-widest mb-6">Process</div>
-              <h2 className="font-fraunces text-5xl text-[#111827] mb-6 leading-tight">
+              <h2 className="font-fraunces text-5xl text-white mb-6 leading-tight">
                 The Path to Your<br />
                 <span className="italic text-[#D4755B]">New Beginning</span>
               </h2>
@@ -17,7 +17,7 @@ const ProcessSection: React.FC = () => {
                 We've simplified the complex journey of buying a home into four seamless, AI-
                 assisted steps.
               </p>
-              <button className="bg-[#111827] text-white font-manrope font-medium px-8 py-3 rounded-lg shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] hover:bg-[#1f2937] transition-all">
+              <button className="bg-[#030810] text-white font-manrope font-medium px-8 py-3 rounded-lg shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] hover:bg-[#0A1628] transition-all">
                 Start Your Journey
               </button>
             </div>
@@ -34,7 +34,7 @@ const ProcessSection: React.FC = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-syne font-bold text-2xl text-[#111827] mb-3">Profile Analysis</h3>
+                  <h3 className="font-syne font-bold text-2xl text-white mb-3">Profile Analysis</h3>
                   <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
                     Our AI deep-dives into your preferences, lifestyle needs, and financial goals to build a comprehensive
                     buyer profile.
@@ -52,7 +52,7 @@ const ProcessSection: React.FC = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-syne font-bold text-2xl text-[#111827] mb-3">Smart Matching</h3>
+                  <h3 className="font-syne font-bold text-2xl text-white mb-3">Smart Matching</h3>
                   <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
                     Algorithms scan thousands of listings to find properties that align with your unique criteria, filtering out
                     the noise.
@@ -70,7 +70,7 @@ const ProcessSection: React.FC = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-syne font-bold text-2xl text-[#111827] mb-3">Virtual Tours & Insights</h3>
+                  <h3 className="font-syne font-bold text-2xl text-white mb-3">Virtual Tours & Insights</h3>
                   <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
                     Experience homes remotely with immersive 3D tours and receive detailed neighborhood analytics
                     reports.
@@ -88,7 +88,7 @@ const ProcessSection: React.FC = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-syne font-bold text-2xl text-[#111827] mb-3">Seamless Closing</h3>
+                  <h3 className="font-syne font-bold text-2xl text-white mb-3">Seamless Closing</h3>
                   <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
                     From offer to keys, our digital platform handles paperwork, negotiations, and closing logistics
                     effortlessly.
