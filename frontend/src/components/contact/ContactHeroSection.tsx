@@ -2,8 +2,8 @@ import React from 'react';
 
 const ContactHeroSection: React.FC = () => {
   return (
-    <section className="bg-[#F9F7F2] border-b border-[rgba(230,224,218,0.5)] py-20">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-[#F9F7F2] border-b border-[rgba(230,224,218,0.5)] py-12 md:py-20">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
         <div className="text-center">
           {/* Label */}
           <div className="flex justify-center mb-4">
@@ -13,12 +13,12 @@ const ContactHeroSection: React.FC = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-fraunces text-6xl text-[#221410] mb-6">
+          <h1 className="font-fraunces text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#221410] mb-6 leading-tight">
             We'd Love to Hear From You
           </h1>
 
           {/* Subtitle */}
-          <p className="font-manrope text-lg text-[#4B5563] leading-relaxed max-w-[672px] mx-auto">
+          <p className="font-manrope text-base md:text-lg text-[#4B5563] leading-relaxed max-w-[672px] mx-auto">
             Whether you have a question about listings, need assistance with our AI tools, or
             want to explore partnership opportunities, our team is ready to help.
           </p>
