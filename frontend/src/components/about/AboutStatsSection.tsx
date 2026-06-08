@@ -26,7 +26,7 @@ const AboutStatsSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F2EFE9] border-y border-[#E6E0DA] py-20">
+    <section className="bg-[#0A1628] border-y border-[#1E3A5F] py-20">
       <div className="max-w-[1280px] mx-auto px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
           {stats.map((stat, index) => (
@@ -37,7 +37,7 @@ const AboutStatsSection: React.FC = () => {
               </div>
               
               {/* Value */}
-              <div className="font-space-mono font-bold text-4xl text-[#221410] mb-2">
+              <div className="font-space-mono font-bold text-4xl text-white mb-2">
                 {stat.value}
               </div>
               

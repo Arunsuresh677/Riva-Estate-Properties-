@@ -33,7 +33,7 @@ const OtherWaysSection: React.FC = () => {
       description: 'Book a convenient time for a detailed consultation with our specialists.',
       action: 'Book Now',
       actionLink: '#',
-      bgColor: 'bg-[#FFF3E0]'
+      bgColor: 'bg-[#1E3A5F]'
     }
   ];
 
@@ -55,7 +55,7 @@ const OtherWaysSection: React.FC = () => {
           {methods.map((method, index) => (
             <div 
               key={index}
-              className="bg-white border border-[#E6E0DA] rounded-2xl p-8 hover:shadow-xl transition-all group"
+              className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-8 hover:shadow-xl transition-all group"
             >
               {/* Icon */}
               <div className={`w-16 h-16 ${method.bgColor} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>

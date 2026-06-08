@@ -60,22 +60,22 @@ const FAQSection: React.FC = () => {
           {faqs.map((faq, index) => (
             <div
               key={faq.id}
-              className="bg-white border border-[#E6E0DA] rounded-xl overflow-hidden transition-all"
+              className="bg-[#0D1B35] border border-[#1E3A5F] rounded-xl overflow-hidden transition-all"
             >
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center gap-3 sm:gap-4 p-4 sm:p-6 text-left hover:bg-[#F2EFE9] transition-colors"
+                className="w-full flex items-center gap-3 sm:gap-4 p-4 sm:p-6 text-left hover:bg-[#1E3A5F]/40 transition-colors"
               >
                 {/* Number Badge */}
-                <div className="w-8 h-8 bg-[#FAF8F4] border border-[#E6E0DA] rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-[#0A1628] border border-[#1E3A5F] rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="font-syne font-bold text-sm text-[#D4755B]">
                     {String(faq.id).padStart(2, '0')}
                   </span>
                 </div>
 
                 {/* Question Text */}
-                <h3 className="flex-1 font-syne font-bold text-base sm:text-lg text-[#221410] pr-2">
+                <h3 className="flex-1 font-syne font-bold text-base sm:text-lg text-white pr-2">
                   {faq.question}
                 </h3>
 
@@ -90,7 +90,7 @@ const FAQSection: React.FC = () => {
               {/* Answer */}
               {openIndex === index && (
                 <div className="px-4 sm:px-6 pb-4 sm:pb-6 pl-[52px] sm:pl-[72px]">
-                  <p className="font-manrope font-extralight text-sm text-[#4B5563] leading-relaxed">
+                  <p className="font-manrope font-extralight text-sm text-[#94A3B8] leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

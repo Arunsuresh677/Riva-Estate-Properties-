@@ -4,7 +4,7 @@ import heritageImage from '../../images/Heritage section.jpg';
 
 const AboutHeritageSection: React.FC = () => {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-[#060D1F] py-24">
       <div className="max-w-[1280px] mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left - Image with Border */}
@@ -20,7 +20,7 @@ const AboutHeritageSection: React.FC = () => {
                       alt="Architectural detail"
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-white mix-blend-saturation" />
+                    <div className="absolute inset-0 bg-transparent" />
                   </div>
                 </div>
               </div>
@@ -38,7 +38,7 @@ const AboutHeritageSection: React.FC = () => {
 
             {/* Headline */}
             <h2 className="mb-6">
-              <span className="font-syne text-[40px] leading-[50px] text-[#221410] block font-semibold">
+              <span className="font-syne text-[40px] leading-[50px] text-white block font-semibold">
                 Redefining the Real Estate Landscape with
               </span>
               <span className="font-fraunces italic text-[40px] leading-[50px] text-[#D4755B] block">
@@ -74,11 +74,11 @@ const AboutHeritageSection: React.FC = () => {
               href="#team" 
               className="inline-flex items-center gap-2 border-b border-[#221410] pb-1 group hover:border-[#D4755B] transition-colors"
             >
-              <span className="font-space-mono text-sm text-[#221410] group-hover:text-[#D4755B] transition-colors">
+              <span className="font-space-mono text-sm text-white group-hover:text-[#D4755B] transition-colors">
                 Meet the Architects
               </span>
 
-              <ArrowRight className="w-4 h-4 text-[#221410] group-hover:text-[#D4755B] transition-colors" />
+              <ArrowRight className="w-4 h-4 text-white group-hover:text-[#D4755B] transition-colors" />
             </a>
           </div>
         </div>

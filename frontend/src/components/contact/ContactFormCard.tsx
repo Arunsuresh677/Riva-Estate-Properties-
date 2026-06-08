@@ -51,13 +51,13 @@ const ContactFormCard: React.FC = () => {
   };
 
   return (
-    <div className="bg-white border border-[#E6E0DA] rounded-2xl p-5 sm:p-6 md:p-8 shadow-sm">
+    <div className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-5 sm:p-6 md:p-8 shadow-sm">
       {/* Card Header */}
       <div className="mb-8">
-        <h2 className="font-syne font-bold text-2xl text-[#221410] mb-2">
+        <h2 className="font-syne font-bold text-2xl text-white mb-2">
           Send Us a Message
         </h2>
-        <p className="font-manrope font-extralight text-sm text-[#4B5563]">
+        <p className="font-manrope font-extralight text-sm text-[#94A3B8]">
           Fill in the form below and our team will get back to you within 24 hours.
         </p>
       </div>
@@ -76,7 +76,7 @@ const ContactFormCard: React.FC = () => {
               value={formData.firstName}
               onChange={handleInputChange}
               placeholder="John"
-              className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+              className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#E2E8F0] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
               required
             />
           </div>
@@ -91,7 +91,7 @@ const ContactFormCard: React.FC = () => {
               value={formData.lastName}
               onChange={handleInputChange}
               placeholder="Doe"
-              className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+              className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#E2E8F0] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
               required
             />
           </div>
@@ -108,7 +108,7 @@ const ContactFormCard: React.FC = () => {
             value={formData.email}
             onChange={handleInputChange}
             placeholder="john.doe@example.com"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#E2E8F0] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
         </div>
@@ -124,7 +124,7 @@ const ContactFormCard: React.FC = () => {
             value={formData.phoneNumber}
             onChange={handleInputChange}
             placeholder="+91 98765 43210"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#E2E8F0] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
         </div>
@@ -140,7 +140,7 @@ const ContactFormCard: React.FC = () => {
             onChange={handleInputChange}
             placeholder="Tell us about your inquiry..."
             rows={5}
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors resize-none"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#E2E8F0] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors resize-none"
             required
           />
         </div>

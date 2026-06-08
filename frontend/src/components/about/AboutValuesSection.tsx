@@ -21,14 +21,14 @@ const AboutValuesSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F8F6F6] py-24">
+    <section className="bg-[#060D1F] py-24">
       <div className="max-w-[1280px] mx-auto px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="font-space-mono text-xs text-[#D4755B] uppercase tracking-[1.2px] mb-4">
             Our Ethos
           </div>
-          <h2 className="font-syne text-4xl text-[#221410]">
+          <h2 className="font-syne text-4xl text-white">
             Driven by Purpose
           </h2>
         </div>
@@ -38,7 +38,7 @@ const AboutValuesSection: React.FC = () => {
           {values.map((value, index) => (
             <div 
               key={index}
-              className="bg-white border border-[#E6E0DA] rounded-xl p-8 text-center hover:shadow-lg transition-shadow"
+              className="bg-[#0D1B35] border border-[#1E3A5F] rounded-xl p-8 text-center hover:shadow-lg transition-shadow"
             >
               {/* Icon Circle */}
               <div className="w-16 h-16 bg-[rgba(236,70,19,0.1)] rounded-full flex items-center justify-center mx-auto mb-6">
@@ -46,7 +46,7 @@ const AboutValuesSection: React.FC = () => {
               </div>
 
               {/* Title */}
-              <h3 className="font-syne text-xl text-[#221410] mb-4">
+              <h3 className="font-syne text-xl text-white mb-4">
                 {value.title}
               </h3>
 
