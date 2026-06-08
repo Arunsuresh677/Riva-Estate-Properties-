@@ -18,7 +18,7 @@ const FAQSection: React.FC = () => {
     {
       id: 2,
       question: "What areas do you currently cover?",
-      answer: "We currently cover major metropolitan areas including Ahmedabad, Mumbai, Delhi, Bangalore, and Pune. We're expanding to more cities across India and will update our coverage area regularly."
+      answer: "We currently cover major metropolitan areas including Ooty, Mumbai, Delhi, Bangalore, and Pune. We're expanding to more cities across India and will update our coverage area regularly."
     },
     {
       id: 3,
@@ -37,19 +37,19 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-white py-16 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <div className="flex justify-center mb-3">
             <span className="font-space-mono text-xs text-[#D4755B] uppercase tracking-widest">
               Help Center
             </span>
           </div>
-          <h2 className="font-syne font-bold text-4xl text-[#221410] mb-4">
+          <h2 className="font-syne font-bold text-2xl sm:text-3xl md:text-4xl text-[#221410] mb-4">
             Common Questions
           </h2>
-          <p className="font-manrope text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
+          <p className="font-manrope text-base md:text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
             Find quick answers to your most pressing questions about buying, selling, and
             partnering with Riva Properties.
           </p>
@@ -58,14 +58,14 @@ const FAQSection: React.FC = () => {
         {/* FAQ Accordion */}
         <div className="max-w-[800px] mx-auto space-y-4">
           {faqs.map((faq, index) => (
-            <div 
+            <div
               key={faq.id}
               className="bg-[#F9F7F2] border border-[#E6E0DA] rounded-xl overflow-hidden transition-all"
             >
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center gap-4 p-6 text-left hover:bg-[#F2EFE9] transition-colors"
+                className="w-full flex items-center gap-3 sm:gap-4 p-4 sm:p-6 text-left hover:bg-[#F2EFE9] transition-colors"
               >
                 {/* Number Badge */}
                 <div className="w-8 h-8 bg-[#F9F7F2] border border-[#E6E0DA] rounded-full flex items-center justify-center flex-shrink-0">
@@ -75,12 +75,12 @@ const FAQSection: React.FC = () => {
                 </div>
 
                 {/* Question Text */}
-                <h3 className="flex-1 font-syne font-bold text-lg text-[#221410]">
+                <h3 className="flex-1 font-syne font-bold text-base sm:text-lg text-[#221410] pr-2">
                   {faq.question}
                 </h3>
 
                 {/* Expand/Collapse Icon */}
-                <span className={`material-icons text-[#D4755B] transition-transform ${
+                <span className={`material-icons text-[#D4755B] transition-transform flex-shrink-0 ${
                   openIndex === index ? 'rotate-180' : ''
                 }`}>
                   expand_more
@@ -89,7 +89,7 @@ const FAQSection: React.FC = () => {
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="px-6 pb-6 pl-[72px]">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6 pl-[52px] sm:pl-[72px]">
                   <p className="font-manrope font-extralight text-sm text-[#4B5563] leading-relaxed">
                     {faq.answer}
                   </p>
@@ -100,9 +100,9 @@ const FAQSection: React.FC = () => {
         </div>
 
         {/* View All Questions Link */}
-        <div className="text-center mt-12">
-          <a 
-            href="#" 
+        <div className="text-center mt-10 md:mt-12">
+          <a
+            href="#"
             className="inline-flex items-center gap-2 font-manrope font-bold text-base text-[#D4755B] hover:text-[#C05621] transition-colors group"
           >
             <span>Get Full Knowledge Base</span>
