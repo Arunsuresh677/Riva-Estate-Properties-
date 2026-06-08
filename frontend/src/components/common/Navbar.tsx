@@ -32,7 +32,6 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/properties', label: 'Properties' },
-    { path: '/ai-hub', label: 'AI Property Hub' },
     { path: '/about', label: 'About' },
     { path: '/contact', label: 'Contact' },
   ];
@@ -45,7 +44,7 @@ const Navbar: React.FC = () => {
       style={{ backgroundColor: `rgba(255, 255, 255, ${bgOpacity.get()})`, backdropFilter: backdropBlur }}
       className="sticky top-0 z-50 border-b border-[#E6D5C3]"
     >
-      <div className="max-w-[1280px] mx-auto px-8 flex items-center justify-between h-20">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3" onClick={closeMobileMenu}>
           <img src="/logo.png" alt="Riva Properties" className="h-9 w-auto" />
@@ -127,7 +126,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-[#E6D5C3] shadow-lg py-4 px-8 flex flex-col gap-4">
+        <div className="md:hidden absolute top-16 md:top-20 left-0 w-full bg-white border-b border-[#E6D5C3] shadow-lg py-4 px-6 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.path}

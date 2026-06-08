@@ -7,7 +7,7 @@ interface PropertyBreadcrumbProps {
 }
 
 const PropertyBreadcrumb: React.FC<PropertyBreadcrumbProps> = ({ 
-  city = "Ahmedabad",
+  city = "Ooty",
   propertyName = "Skyline Towers" 
 }) => {
   const navigate = useNavigate();

@@ -29,7 +29,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
       '@type': 'WebSite',
       name: 'Riva Properties',
       url: SITE_URL,
-      description: 'AI-powered luxury real estate platform for finding your perfect property in India.',
+      description: 'Luxury real estate platform for finding your perfect property in Ooty and the Nilgiris, Tamil Nadu.',
       potentialAction: {
         '@type': 'SearchAction',
         target: `${SITE_URL}/properties?q={search_term_string}`,
@@ -62,8 +62,8 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
       image: data?.image || `${SITE_URL}/og-image.png`,
       address: {
         '@type': 'PostalAddress',
-        addressLocality: data?.location || 'City',
-        addressRegion: data?.region || 'Region',
+        addressLocality: data?.location || 'Ooty',
+        addressRegion: data?.region || 'Tamil Nadu',
         addressCountry: 'IN',
       },
       ...(data?.price && { price: `₹${data.price}`, priceCurrency: 'INR' }),
@@ -82,7 +82,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
       '@type': 'WebApplication',
       name: 'AI Property Hub - Riva Properties',
       applicationCategory: 'RealEstateApplication',
-      description: 'AI-powered real estate analytics, property search, and investment insights.',
+      description: 'Luxury property search and investment insights for Ooty and the Nilgiris region.',
       url: `${SITE_URL}/ai-hub`,
       offers: {
         '@type': 'Offer',
