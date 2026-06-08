@@ -37,7 +37,7 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-[#FAF8F4] py-16 md:py-24">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-16">
@@ -60,7 +60,7 @@ const FAQSection: React.FC = () => {
           {faqs.map((faq, index) => (
             <div
               key={faq.id}
-              className="bg-[#F9F7F2] border border-[#E6E0DA] rounded-xl overflow-hidden transition-all"
+              className="bg-white border border-[#E6E0DA] rounded-xl overflow-hidden transition-all"
             >
               {/* Question */}
               <button
@@ -68,7 +68,7 @@ const FAQSection: React.FC = () => {
                 className="w-full flex items-center gap-3 sm:gap-4 p-4 sm:p-6 text-left hover:bg-[#F2EFE9] transition-colors"
               >
                 {/* Number Badge */}
-                <div className="w-8 h-8 bg-[#F9F7F2] border border-[#E6E0DA] rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-[#FAF8F4] border border-[#E6E0DA] rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="font-syne font-bold text-sm text-[#D4755B]">
                     {String(faq.id).padStart(2, '0')}
                   </span>
