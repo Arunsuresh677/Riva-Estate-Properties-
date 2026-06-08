@@ -37,7 +37,7 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#FAF8F4] py-16 md:py-24">
+    <section className="bg-[#060D1F] py-16 md:py-24">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-16">
@@ -46,10 +46,10 @@ const FAQSection: React.FC = () => {
               Help Center
             </span>
           </div>
-          <h2 className="font-syne font-bold text-2xl sm:text-3xl md:text-4xl text-[#221410] mb-4">
+          <h2 className="font-syne font-bold text-2xl sm:text-3xl md:text-4xl text-white mb-4">
             Common Questions
           </h2>
-          <p className="font-manrope text-base md:text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
+          <p className="font-manrope text-base md:text-lg text-white/70 leading-relaxed max-w-[640px] mx-auto">
             Find quick answers to your most pressing questions about buying, selling, and
             partnering with Riva Properties.
           </p>
