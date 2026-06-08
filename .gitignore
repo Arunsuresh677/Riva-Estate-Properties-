@@ -188,3 +188,4 @@ docker-compose.override.yml
 !.env.template
 frontend/src/images/Newsletter
 frontend/src/images/Newsletter 
+"frontend/src/images/Newsletter " 
