@@ -4,15 +4,15 @@ import heritageImage from '../../images/Heritage section.jpg';
 
 const AboutHeritageSection: React.FC = () => {
   return (
-    <section className="bg-[#060D1F] py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <section className="bg-[#060D1F] py-12 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start">
           {/* Left - Image with Border */}
           <div className="relative">
             {/* Inner border box */}
             <div className="border-2 border-[rgba(236,70,19,0.2)] rounded-xl p-4">
               {/* Image container with overlay */}
-              <div className="relative h-[735px] bg-[rgba(242,239,233,0.3)] border border-[rgba(230,224,218,0.5)] rounded-lg overflow-hidden">
+              <div className="relative h-[280px] sm:h-[420px] md:h-[735px] bg-[rgba(242,239,233,0.3)] border border-[rgba(230,224,218,0.5)] rounded-lg overflow-hidden">
                 <div className="absolute inset-4">
                   <div className="relative h-full w-full overflow-hidden">
                     <img 
@@ -28,7 +28,7 @@ const AboutHeritageSection: React.FC = () => {
           </div>
 
           {/* Right - Content */}
-          <div className="lg:pt-16">
+          <div className="lg:pt-8 xl:pt-16">
             {/* Label */}
             <div className="mb-6">
               <p className="font-space-mono text-xs text-[#D4755B] uppercase tracking-[2.4px]">
@@ -38,10 +38,10 @@ const AboutHeritageSection: React.FC = () => {
 
             {/* Headline */}
             <h2 className="mb-6">
-              <span className="font-syne text-[40px] leading-[50px] text-white block font-semibold">
+              <span className="font-syne text-2xl sm:text-3xl md:text-[40px] md:leading-[50px] text-white block font-semibold">
                 Redefining the Real Estate Landscape with
               </span>
-              <span className="font-fraunces italic text-[40px] leading-[50px] text-[#D4755B] block">
+              <span className="font-fraunces italic text-2xl sm:text-3xl md:text-[40px] md:leading-[50px] text-[#D4755B] block">
                 Better Property Discovery
               </span>
             </h2>

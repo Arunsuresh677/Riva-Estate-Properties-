@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-[#111827] text-white">
-      <div className="max-w-[1280px] mx-auto px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
           {/* Brand Column */}
           <div>
             <Link to="/" className="flex items-center gap-3 mb-6">

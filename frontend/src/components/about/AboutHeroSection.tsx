@@ -3,7 +3,7 @@ import mainAboutImage from '../../images/Main about image.jpg';
 
 const AboutHeroSection: React.FC = () => {
   return (
-    <section className="relative bg-[#C05621] h-[480px] overflow-hidden">
+    <section className="relative bg-[#C05621] min-h-[320px] md:h-[480px] overflow-hidden">
       {/* Background Pattern */}
       <div 
         className="absolute inset-0 opacity-20 mix-blend-overlay"
@@ -19,8 +19,8 @@ const AboutHeroSection: React.FC = () => {
 
       {/* Content */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center max-w-[702px] px-8">
-          <h1 className="font-fraunces text-[56px] leading-[61.6px] text-[#F2EFE9] mb-6">
+        <div className="text-center max-w-[702px] px-4 sm:px-8">
+          <h1 className="font-fraunces text-3xl sm:text-4xl md:text-[56px] md:leading-[61.6px] text-[#F2EFE9] mb-4 md:mb-6">
             Redefining Real Estate with<br />
             <span className="italic">Intelligence & Elegance</span>
           </h1>

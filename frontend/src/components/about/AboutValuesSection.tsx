@@ -21,14 +21,14 @@ const AboutValuesSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#060D1F] py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-[#060D1F] py-12 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="font-space-mono text-xs text-[#D4755B] uppercase tracking-[1.2px] mb-4">
             Our Ethos
           </div>
-          <h2 className="font-syne text-4xl text-white">
+          <h2 className="font-syne text-2xl sm:text-3xl md:text-4xl text-white">
             Driven by Purpose
           </h2>
         </div>

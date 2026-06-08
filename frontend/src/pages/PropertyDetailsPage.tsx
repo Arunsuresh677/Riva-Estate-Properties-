@@ -174,8 +174,8 @@ const PropertyDetailsPage: React.FC = () => {
       />
 
       {/* Main Content Area */}
-      <div className="bg-[#F2EFE9] py-12">
-        <div className="max-w-[1280px] mx-auto px-8">
+      <div className="bg-[#060D1F] py-8 md:py-12">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Left Column - Main Content */}
             <div className="lg:col-span-2">

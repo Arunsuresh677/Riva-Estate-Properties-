@@ -12,9 +12,9 @@ const AboutAISection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#060D1F] border-t border-[#1E3A5F] py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-[#060D1F] border-t border-[#1E3A5F] py-12 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Left - Content */}
           <div>
             {/* Label */}
@@ -26,10 +26,10 @@ const AboutAISection: React.FC = () => {
 
             {/* Headline */}
             <h2 className="mb-6">
-              <span className="font-syne text-5xl leading-[48px] text-white block font-semibold">
+              <span className="font-syne text-3xl sm:text-4xl md:text-5xl md:leading-[48px] text-white block font-semibold">
                 AI-Powered
               </span>
-              <span className="font-fraunces font-light italic text-5xl leading-[48px] text-[#D4755B] block">
+              <span className="font-fraunces font-light italic text-3xl sm:text-4xl md:text-5xl md:leading-[48px] text-[#D4755B] block">
                 Property Intelligence
               </span>
             </h2>
@@ -73,7 +73,7 @@ const AboutAISection: React.FC = () => {
           <div className="relative">
             {/* Background overlay (rotated) */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[592px] h-[732px] bg-[rgba(230,224,218,0.5)] rounded-lg rotate-2" />
+              <div className="hidden md:block w-[592px] h-[732px] bg-[rgba(230,224,218,0.5)] rounded-lg rotate-2" />
             </div>
 
             {/* Main Image Container */}

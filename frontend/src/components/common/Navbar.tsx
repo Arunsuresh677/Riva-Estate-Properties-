@@ -41,14 +41,14 @@ const Navbar: React.FC = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      style={{ backgroundColor: `rgba(255, 255, 255, ${bgOpacity.get()})`, backdropFilter: backdropBlur }}
+      style={{ backgroundColor: `rgba(6,13,31,${bgOpacity.get()})`, backdropFilter: backdropBlur }}
       className="sticky top-0 z-50 border-b border-[#E6D5C3]"
     >
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3" onClick={closeMobileMenu}>
           <img src="/logo.png" alt="Riva Properties" className="h-9 w-auto" />
-          <span className="font-fraunces text-2xl font-bold text-[#111827]">Riva Properties</span>
+          <span className="font-fraunces text-2xl font-bold text-white">Riva Properties</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
               className={`font-manrope transition-colors ${
                 isActive(link.path)
                   ? 'text-[#D4755B] font-semibold'
-                  : 'text-[#374151] hover:text-[#D4755B]'
+                  : 'text-[#CBD5E1] hover:text-[#D4755B]'
               }`}
             >
               {link.label}
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
                 className={`font-manrope transition-colors ${
                   isActive('/my-listings')
                     ? 'text-[#D4755B] font-semibold'
-                    : 'text-[#374151] hover:text-[#D4755B]'
+                    : 'text-[#CBD5E1] hover:text-[#D4755B]'
                 }`}
               >
                 My Listings
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
               </Link>
               <button
                 onClick={handleLogout}
-                className="font-manrope font-semibold text-[#374151] hover:text-[#D4755B] transition-colors px-4 py-2"
+                className="font-manrope font-semibold text-[#CBD5E1] hover:text-[#D4755B] transition-colors px-4 py-2"
               >
                 Logout
               </button>
@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
             <>
               <Link
                 to="/signin"
-                className="font-manrope font-semibold text-[#374151] hover:text-[#D4755B] transition-colors px-4 py-2"
+                className="font-manrope font-semibold text-[#CBD5E1] hover:text-[#D4755B] transition-colors px-4 py-2"
               >
                 Sign In
               </Link>
@@ -115,7 +115,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden p-2 text-[#374151] hover:text-[#D4755B] transition-colors"
+          className="md:hidden p-2 text-[#CBD5E1] hover:text-[#D4755B] transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           <span className="font-material-icons text-2xl">
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-16 md:top-20 left-0 w-full bg-white border-b border-[#E6D5C3] shadow-lg py-4 px-6 flex flex-col gap-4">
+        <div className="md:hidden absolute top-16 md:top-20 left-0 w-full bg-[#060D1F] border-b border-[#1E3A5F] shadow-lg py-4 px-6 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -134,22 +134,22 @@ const Navbar: React.FC = () => {
               className={`font-manrope text-lg py-2 transition-colors ${
                 isActive(link.path)
                   ? 'text-[#D4755B] font-semibold'
-                  : 'text-[#374151] hover:text-[#D4755B]'
+                  : 'text-[#CBD5E1] hover:text-[#D4755B]'
               }`}
               onClick={closeMobileMenu}
             >
               {link.label}
             </Link>
           ))}
-          <div className="border-t border-gray-100 my-2 pt-4 flex flex-col gap-4">
+          <div className="border-t border-[#1E3A5F] my-2 pt-4 flex flex-col gap-4">
             {isAuthenticated && user ? (
               <>
-                <span className="font-manrope text-sm text-[#374151]">
+                <span className="font-manrope text-sm text-[#94A3B8]">
                   Signed in as <span className="font-semibold">{user.name}</span>
                 </span>
                 <Link
                   to="/my-listings"
-                  className="font-manrope font-semibold text-[#374151] hover:text-[#D4755B] transition-colors py-2"
+                  className="font-manrope font-semibold text-[#CBD5E1] hover:text-[#D4755B] transition-colors py-2"
                   onClick={closeMobileMenu}
                 >
                   My Listings
@@ -163,7 +163,7 @@ const Navbar: React.FC = () => {
                 </Link>
                 <button
                   onClick={handleLogout}
-                  className="font-manrope font-semibold text-[#374151] hover:text-[#D4755B] transition-colors py-2 text-left"
+                  className="font-manrope font-semibold text-[#CBD5E1] hover:text-[#D4755B] transition-colors py-2 text-left"
                 >
                   Logout
                 </button>
@@ -172,7 +172,7 @@ const Navbar: React.FC = () => {
               <>
                 <Link
                   to="/signin"
-                  className="font-manrope font-semibold text-[#374151] hover:text-[#D4755B] transition-colors py-2"
+                  className="font-manrope font-semibold text-[#CBD5E1] hover:text-[#D4755B] transition-colors py-2"
                   onClick={closeMobileMenu}
                 >
                   Sign In
