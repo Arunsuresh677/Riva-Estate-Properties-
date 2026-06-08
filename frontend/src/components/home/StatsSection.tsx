@@ -2,7 +2,7 @@ import React from 'react';
 
 const StatsSection: React.FC = () => {
   return (
-    <section className="bg-[#F0EBE5] border-y border-[rgba(212,117,91,0.05)] py-8 md:py-12">
+    <section className="bg-[#0A1628] border-y border-[rgba(212,117,91,0.05)] py-8 md:py-12">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 divide-x divide-[rgba(212,117,91,0.1)]">
           <div className="text-center px-2">
