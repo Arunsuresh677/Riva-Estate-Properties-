@@ -16,12 +16,12 @@ const ContactInfoCards: React.FC = () => {
               Visit Our Office
             </h3>
             <p className="font-manrope font-extralight text-sm text-[#4B5563] leading-relaxed mb-3">
-              502, Devpath Building,<br />
-              Near Torrent Lab,<br />
-              Ashram Road, Ahmedabad
+              12, Highlands Residency,<br />
+              Near Botanical Garden,<br />
+              Garden Road, Ooty – 643 001
             </p>
             <a 
-              href="https://maps.google.com" 
+              href="https://www.google.com/maps/search/?api=1&query=Botanical+Garden+Ooty+Tamil+Nadu" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-manrope font-medium text-sm text-[#D4755B] hover:text-[#C05621] transition-colors"
