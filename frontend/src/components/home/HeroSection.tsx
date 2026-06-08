@@ -1,16 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import happyHomeowner1 from '../../images/Happy Homeowners_1.jpg';
-import happyHomeowner2 from '../../images/Happy Homeowners_2.jpg';
-import happyHomeowner3 from '../../images/Team section.jpg';
-import rightFeatureCard from '../../images/Right side feature card.jpg';
 
 const slideshowImages = [
-  happyHomeowner1,
-  happyHomeowner2,
-  happyHomeowner3,
-  rightFeatureCard,
+  'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1600&q=80', // luxury white villa
+  'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80', // modern mansion pool
+  'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80', // luxury home exterior
+  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80', // modern interior living
 ];
 
 const words = ["Discover", "Your", "Dream", "Home", "with", "AI", "Intelligence"];
@@ -51,7 +47,6 @@ const HeroSection: React.FC = () => {
             />
           </motion.div>
         </AnimatePresence>
-        {/* Dark overlay so text stays readable */}
         <div className="absolute inset-0 bg-black/55" />
       </motion.div>
 
