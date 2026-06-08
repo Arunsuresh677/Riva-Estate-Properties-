@@ -45,7 +45,7 @@ const OtherWaysSection: React.FC = () => {
           <h2 className="font-syne font-bold text-xl sm:text-2xl md:text-4xl text-white mb-3 md:mb-4">
             Other Ways to Connect
           </h2>
-          <p className="font-manrope text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
+          <p className="font-manrope text-lg text-[#CBD5E1] leading-relaxed max-w-[640px] mx-auto">
             Need faster support? Try our instant messaging options.
           </p>
         </div>
@@ -70,7 +70,7 @@ const OtherWaysSection: React.FC = () => {
               </h3>
 
               {/* Description */}
-              <p className="font-manrope font-extralight text-sm text-[#4B5563] leading-relaxed mb-6">
+              <p className="font-manrope font-extralight text-sm text-[#CBD5E1] leading-relaxed mb-6">
                 {method.description}
               </p>
 

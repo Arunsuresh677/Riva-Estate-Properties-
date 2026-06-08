@@ -14,7 +14,7 @@ The master suite is a sanctuary retreat with a spacious walk-in closet and an en
       {/* Section Header */}
       <div className="flex items-center gap-3 mb-6">
         <div className="w-1 h-6 bg-[#D4755B] rounded-full" />
-        <h2 className="font-syne text-2xl text-[#0F172A]">
+        <h2 className="font-syne text-2xl text-white">
           About The Property
         </h2>
       </div>
@@ -24,7 +24,7 @@ The master suite is a sanctuary retreat with a spacious walk-in closet and an en
         {description.split('\n\n').map((paragraph, index) => (
           <p 
             key={index}
-            className="font-manrope font-extralight text-base text-[#64748B] leading-relaxed"
+            className="font-manrope font-extralight text-base text-[#94A3B8] leading-relaxed"
           >
             {paragraph}
           </p>

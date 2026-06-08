@@ -8,7 +8,7 @@ const AIIntelligenceSection: React.FC = () => {
         <div className="text-center mb-16">
           <div className="font-space-mono text-sm text-[#D4755B] uppercase tracking-widest mb-4">Why Choose AI?</div>
           <h2 className="font-fraunces text-5xl text-white mb-6">AI-Powered Property Intelligence</h2>
-          <p className="font-manrope font-light text-lg text-[#4b5563] max-w-[740px] mx-auto">
+          <p className="font-manrope font-light text-lg text-[#CBD5E1] max-w-[740px] mx-auto">
             We leverage advanced algorithms to give you a competitive edge in the market, turning data
             into your dream home.
           </p>
@@ -22,7 +22,7 @@ const AIIntelligenceSection: React.FC = () => {
               <span className="font-material-icons text-3xl text-[#D4755B]">query_stats</span>
             </div>
             <h3 className="font-syne font-bold text-2xl text-white mb-4">Live Market Scraping</h3>
-            <p className="font-manrope text-base text-[#6b7280] leading-relaxed">
+            <p className="font-manrope text-base text-[#94A3B8] leading-relaxed">
               Real-time data feeds from every major listing source, aggregating hidden gems before
               they hit the mainstream market.
             </p>
@@ -34,7 +34,7 @@ const AIIntelligenceSection: React.FC = () => {
               <span className="font-material-icons text-3xl text-[#D4755B]">psychology</span>
             </div>
             <h3 className="font-syne font-bold text-2xl text-white mb-4">Expert AI Insights</h3>
-            <p className="font-manrope text-base text-[#6b7280] leading-relaxed">
+            <p className="font-manrope text-base text-[#94A3B8] leading-relaxed">
               Predictive analytics on value appreciation and investment potential, tailored to your
               financial goals.
             </p>
@@ -46,7 +46,7 @@ const AIIntelligenceSection: React.FC = () => {
               <span className="font-material-icons text-3xl text-[#D4755B]">location_city</span>
             </div>
             <h3 className="font-syne font-bold text-2xl text-white mb-4">Best Area Suggestions</h3>
-            <p className="font-manrope text-base text-[#6b7280] leading-relaxed">
+            <p className="font-manrope text-base text-[#94A3B8] leading-relaxed">
               Neighborhood matching based on your lifestyle habits, commute preferences, and
               local amenities.
             </p>

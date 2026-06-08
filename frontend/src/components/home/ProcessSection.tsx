@@ -13,7 +13,7 @@ const ProcessSection: React.FC = () => {
                 The Path to Your<br />
                 <span className="italic text-[#D4755B]">New Beginning</span>
               </h2>
-              <p className="font-manrope font-light text-lg text-[#4b5563] mb-8 leading-relaxed">
+              <p className="font-manrope font-light text-lg text-[#CBD5E1] mb-8 leading-relaxed">
                 We've simplified the complex journey of buying a home into four seamless, AI-
                 assisted steps.
               </p>
@@ -35,7 +35,7 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-syne font-bold text-2xl text-white mb-3">Profile Analysis</h3>
-                  <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
+                  <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed">
                     Our AI deep-dives into your preferences, lifestyle needs, and financial goals to build a comprehensive
                     buyer profile.
                   </p>
@@ -53,7 +53,7 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-syne font-bold text-2xl text-white mb-3">Smart Matching</h3>
-                  <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
+                  <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed">
                     Algorithms scan thousands of listings to find properties that align with your unique criteria, filtering out
                     the noise.
                   </p>
@@ -71,7 +71,7 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-syne font-bold text-2xl text-white mb-3">Virtual Tours & Insights</h3>
-                  <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
+                  <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed">
                     Experience homes remotely with immersive 3D tours and receive detailed neighborhood analytics
                     reports.
                   </p>
@@ -89,7 +89,7 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-syne font-bold text-2xl text-white mb-3">Seamless Closing</h3>
-                  <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
+                  <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed">
                     From offer to keys, our digital platform handles paperwork, negotiations, and closing logistics
                     effortlessly.
                   </p>

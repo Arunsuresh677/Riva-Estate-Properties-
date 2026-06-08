@@ -64,10 +64,10 @@ const ScheduleViewingCard: React.FC<ScheduleViewingCardProps> = ({ property }) =
 
   if (success) {
     return (
-      <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-lg sticky top-8 text-center">
+      <div className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-8 shadow-lg sticky top-8 text-center">
         <span className="material-icons text-5xl text-[#22C55E] mb-4">check_circle</span>
-        <h3 className="font-syne text-xl text-[#0F172A] mb-2">Visit Scheduled!</h3>
-        <p className="font-manrope font-extralight text-sm text-[#64748B] mb-6">
+        <h3 className="font-syne text-xl text-white mb-2">Visit Scheduled!</h3>
+        <p className="font-manrope font-extralight text-sm text-[#94A3B8] mb-6">
           We'll confirm your appointment within 24 hours.
         </p>
         <button
@@ -81,19 +81,19 @@ const ScheduleViewingCard: React.FC<ScheduleViewingCardProps> = ({ property }) =
   }
 
   return (
-    <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-lg sticky top-8">
+    <div className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-8 shadow-lg sticky top-8">
       {/* Header */}
       <div className="flex items-center gap-2 mb-6">
         <span className="material-icons text-[#D4755B] text-xl">
           calendar_today
         </span>
-        <h3 className="font-syne text-xl text-[#0F172A]">
+        <h3 className="font-syne text-xl text-white">
           Schedule a Viewing
         </h3>
       </div>
 
       {/* Agent Info */}
-      <div className="flex items-center gap-4 mb-6 pb-6 border-b border-[#E6E0DA]">
+      <div className="flex items-center gap-4 mb-6 pb-6 border-b border-[#1E3A5F]">
         <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
           <img 
             src={imgBackground}
@@ -102,10 +102,10 @@ const ScheduleViewingCard: React.FC<ScheduleViewingCardProps> = ({ property }) =
           />
         </div>
         <div>
-          <p className="font-manrope font-medium text-sm text-[#0F172A] mb-0.5">
+          <p className="font-manrope font-medium text-sm text-white mb-0.5">
             Agent Name
           </p>
-          <p className="font-manrope font-extralight text-xs text-[#64748B]">
+          <p className="font-manrope font-extralight text-xs text-[#94A3B8]">
             Senior Property Consultant
           </p>
         </div>
@@ -115,7 +115,7 @@ const ScheduleViewingCard: React.FC<ScheduleViewingCardProps> = ({ property }) =
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Full Name */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             Full Name
           </label>
           <input
@@ -124,14 +124,14 @@ const ScheduleViewingCard: React.FC<ScheduleViewingCardProps> = ({ property }) =
             value={formData.fullName}
             onChange={handleInputChange}
             placeholder="Enter your full name"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
         </div>
 
         {/* Email */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             Email Address
           </label>
           <input
@@ -140,14 +140,14 @@ const ScheduleViewingCard: React.FC<ScheduleViewingCardProps> = ({ property }) =
             value={formData.email}
             onChange={handleInputChange}
             placeholder="your.email@example.com"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
         </div>
 
         {/* Phone */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             Phone Number
           </label>
           <input
@@ -156,14 +156,14 @@ const ScheduleViewingCard: React.FC<ScheduleViewingCardProps> = ({ property }) =
             value={formData.phone}
             onChange={handleInputChange}
             placeholder="+91 98765 43210"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
         </div>
 
         {/* Date */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             Preferred Date
           </label>
           <input
@@ -171,21 +171,21 @@ const ScheduleViewingCard: React.FC<ScheduleViewingCardProps> = ({ property }) =
             name="date"
             value={formData.date}
             onChange={handleInputChange}
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-white focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
         </div>
 
         {/* Time Slot */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             Time Slot
           </label>
           <select
             name="timeSlot"
             value={formData.timeSlot}
             onChange={handleInputChange}
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] focus:outline-none focus:border-[#D4755B] transition-colors appearance-none cursor-pointer"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-white focus:outline-none focus:border-[#D4755B] transition-colors appearance-none cursor-pointer"
             required
             style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%230F172A' d='M6 8L2 4h8z'/%3E%3C/svg%3E")`,

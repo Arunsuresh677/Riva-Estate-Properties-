@@ -48,7 +48,7 @@ const SignInPage: React.FC = () => {
           <SignInForm onSubmit={handleSignIn} />
 
           {/* Sign Up Link */}
-          <p className="text-center font-manrope font-extralight text-sm text-[#64748B] mt-6">
+          <p className="text-center font-manrope font-extralight text-sm text-[#94A3B8] mt-6">
             Don't have an account?{' '}
             <Link
               to="/signup"
@@ -63,7 +63,7 @@ const SignInPage: React.FC = () => {
         <div className="text-center mt-6">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 font-manrope font-medium text-sm text-[#64748B] hover:text-[#D4755B] transition-colors"
+            className="inline-flex items-center gap-2 font-manrope font-medium text-sm text-[#94A3B8] hover:text-[#D4755B] transition-colors"
           >
             <span className="material-icons text-base">arrow_back</span>
             <span>Back to Home</span>

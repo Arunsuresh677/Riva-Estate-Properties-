@@ -35,7 +35,7 @@ const AboutAISection: React.FC = () => {
             </h2>
 
             {/* Description */}
-            <p className="font-manrope font-extralight text-lg leading-[29.25px] text-[#4b5563] mb-8">
+            <p className="font-manrope font-extralight text-lg leading-[29.25px] text-[#CBD5E1] mb-8">
               Our proprietary algorithms analyze millions of data points—from sun
               patterns and neighborhood noise levels to architectural styles and
               historical value trends—to present you with opportunities others
@@ -93,7 +93,7 @@ const AboutAISection: React.FC = () => {
 
                 {/* Content */}
                 <div>
-                  <p className="font-space-mono text-xs text-[#6b7280] uppercase mb-1">
+                  <p className="font-space-mono text-xs text-[#94A3B8] uppercase mb-1">
                     Match Score
                   </p>
                   <p className="font-manrope font-extralight text-lg text-white">

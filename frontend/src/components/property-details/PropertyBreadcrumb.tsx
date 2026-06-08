@@ -13,13 +13,13 @@ const PropertyBreadcrumb: React.FC<PropertyBreadcrumbProps> = ({
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white border-b border-[#E6E0DA]">
+    <div className="bg-white border-b border-[#1E3A5F]">
       <div className="max-w-[1280px] mx-auto px-8 py-6">
         <div className="flex items-center justify-between">
           {/* Back Button */}
           <button 
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 text-[#64748B] hover:text-[#D4755B] transition-colors group"
+            className="flex items-center gap-2 text-[#94A3B8] hover:text-[#D4755B] transition-colors group"
           >
             <span className="material-icons text-base">
               arrow_back
@@ -31,19 +31,19 @@ const PropertyBreadcrumb: React.FC<PropertyBreadcrumbProps> = ({
 
           {/* Breadcrumb Trail */}
           <nav className="flex items-center gap-2 text-xs tracking-wider uppercase opacity-80">
-            <Link to="/" className="font-manrope font-extralight text-[#64748B] hover:text-[#D4755B] transition-colors">
+            <Link to="/" className="font-manrope font-extralight text-[#94A3B8] hover:text-[#D4755B] transition-colors">
               Home
             </Link>
             <span className="font-manrope text-[#CBD5E1]">
               /
             </span>
-            <Link to="/properties" className="font-manrope font-extralight text-[#64748B] hover:text-[#D4755B] transition-colors">
+            <Link to="/properties" className="font-manrope font-extralight text-[#94A3B8] hover:text-[#D4755B] transition-colors">
               Properties
             </Link>
             <span className="font-manrope text-[#CBD5E1]">
               /
             </span>
-            <span className="font-manrope font-extralight text-[#64748B]">
+            <span className="font-manrope font-extralight text-[#94A3B8]">
               {city}
             </span>
             <span className="font-manrope text-[#CBD5E1]">

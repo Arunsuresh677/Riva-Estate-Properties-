@@ -58,18 +58,18 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
                   {currentStatus.label}
                 </span>
               </div>
-              <span className="font-manrope font-extralight text-sm text-[#64748B]">
+              <span className="font-manrope font-extralight text-sm text-[#94A3B8]">
                 Ref: {refNumber}
               </span>
             </div>
 
             {/* Property Name */}
-            <h1 className="font-manrope font-extralight text-4xl text-[#0F172A] leading-tight tracking-tight mb-3">
+            <h1 className="font-manrope font-extralight text-4xl text-white leading-tight tracking-tight mb-3">
               {name}
             </h1>
 
             {/* Location */}
-            <div className="flex items-center gap-2 text-[#64748B]">
+            <div className="flex items-center gap-2 text-[#94A3B8]">
               <span className="material-icons text-lg">
                 location_on
               </span>
@@ -81,7 +81,7 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
 
           {/* Right - Price */}
           <div className="text-right">
-            <p className="font-manrope font-extralight text-sm text-[#64748B] mb-2 uppercase tracking-wider">
+            <p className="font-manrope font-extralight text-sm text-[#94A3B8] mb-2 uppercase tracking-wider">
               Listed Price
             </p>
             <div className="flex items-baseline gap-1">
@@ -105,10 +105,10 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
               </span>
             </div>
             <div className="text-center">
-              <p className="font-space-mono font-bold text-2xl text-[#0F172A] mb-0.5">
+              <p className="font-space-mono font-bold text-2xl text-white mb-0.5">
                 {beds}
               </p>
-              <p className="font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider">
+              <p className="font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider">
                 Bedrooms
               </p>
             </div>
@@ -122,10 +122,10 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
               </span>
             </div>
             <div className="text-center">
-              <p className="font-space-mono font-bold text-2xl text-[#0F172A] mb-0.5">
+              <p className="font-space-mono font-bold text-2xl text-white mb-0.5">
                 {baths}
               </p>
-              <p className="font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider">
+              <p className="font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider">
                 Bathrooms
               </p>
             </div>
@@ -139,10 +139,10 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
               </span>
             </div>
             <div className="text-center">
-              <p className="font-space-mono font-bold text-2xl text-[#0F172A] mb-0.5">
+              <p className="font-space-mono font-bold text-2xl text-white mb-0.5">
                 {sqft.toLocaleString()}
               </p>
-              <p className="font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider">
+              <p className="font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider">
                 Sq Ft
               </p>
             </div>

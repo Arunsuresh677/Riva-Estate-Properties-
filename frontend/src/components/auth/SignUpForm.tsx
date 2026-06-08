@@ -43,7 +43,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
       {/* First Name & Last Name */}
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             First Name
           </label>
           <div className="relative">
@@ -54,14 +54,14 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
               value={formData.firstName}
               onChange={handleInputChange}
               placeholder="John"
-              className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg pl-12 pr-4 py-3.5 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+              className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg pl-12 pr-4 py-3.5 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
               required
             />
           </div>
         </div>
 
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             Last Name
           </label>
           <div className="relative">
@@ -72,7 +72,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
               value={formData.lastName}
               onChange={handleInputChange}
               placeholder="Doe"
-              className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg pl-12 pr-4 py-3.5 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+              className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg pl-12 pr-4 py-3.5 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
               required
             />
           </div>
@@ -81,7 +81,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
 
       {/* Email Input */}
       <div>
-        <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+        <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
           Email Address
         </label>
         <div className="relative">
@@ -92,7 +92,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
             value={formData.email}
             onChange={handleInputChange}
             placeholder="john.doe@example.com"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg pl-12 pr-4 py-3.5 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg pl-12 pr-4 py-3.5 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
         </div>
@@ -100,7 +100,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
 
       {/* Password Input */}
       <div>
-        <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+        <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
           Password
         </label>
         <div className="relative">
@@ -111,7 +111,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
             value={formData.password}
             onChange={handleInputChange}
             placeholder="Create a strong password"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg pl-12 pr-12 py-3.5 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg pl-12 pr-12 py-3.5 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
             minLength={8}
           />
@@ -127,7 +127,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
 
       {/* Confirm Password Input */}
       <div>
-        <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+        <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
           Confirm Password
         </label>
         <div className="relative">
@@ -138,7 +138,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
             value={formData.confirmPassword}
             onChange={handleInputChange}
             placeholder="Re-enter your password"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg pl-12 pr-12 py-3.5 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg pl-12 pr-12 py-3.5 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
           <button
@@ -159,10 +159,10 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
             name="agreeToTerms"
             checked={formData.agreeToTerms}
             onChange={handleInputChange}
-            className="w-4 h-4 mt-0.5 rounded border-[#E6E0DA] text-[#D4755B] focus:ring-[#D4755B]"
+            className="w-4 h-4 mt-0.5 rounded border-[#1E3A5F] text-[#D4755B] focus:ring-[#D4755B]"
             required
           />
-          <span className="font-manrope font-extralight text-sm text-[#4B5563] leading-relaxed">
+          <span className="font-manrope font-extralight text-sm text-[#CBD5E1] leading-relaxed">
             I agree to the{' '}
             <Link to="/terms" className="text-[#D4755B] hover:text-[#C05621] font-medium">
               Terms & Conditions

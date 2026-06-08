@@ -21,14 +21,14 @@ const TestimonialsSection: React.FC = () => {
                 <span key={i} className="material-icons text-[#FCD34D] text-xl">star</span>
               ))}
             </div>
-            <p className="font-manrope text-base text-[#4b5563] leading-relaxed mb-6">
+            <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed mb-6">
               "Riva Properties's AI matched us with our dream home in just 2 weeks. The process was seamless and personalized."
             </p>
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-[#060D1F] rounded-full" />
               <div>
                 <div className="font-syne font-bold text-sm text-white">Sarah Johnson</div>
-                <div className="font-manrope text-xs text-[#6b7280]">Los Angeles, CA</div>
+                <div className="font-manrope text-xs text-[#94A3B8]">Los Angeles, CA</div>
               </div>
             </div>
           </div>
@@ -40,14 +40,14 @@ const TestimonialsSection: React.FC = () => {
                 <span key={i} className="material-icons text-[#FCD34D] text-xl">star</span>
               ))}
             </div>
-            <p className="font-manrope text-base text-[#4b5563] leading-relaxed mb-6">
+            <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed mb-6">
               "The neighborhood insights were invaluable. We knew exactly what we were getting before even visiting."
             </p>
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-[#060D1F] rounded-full" />
               <div>
                 <div className="font-syne font-bold text-sm text-white">Michael Chen</div>
-                <div className="font-manrope text-xs text-[#6b7280]">San Francisco, CA</div>
+                <div className="font-manrope text-xs text-[#94A3B8]">San Francisco, CA</div>
               </div>
             </div>
           </div>
@@ -59,14 +59,14 @@ const TestimonialsSection: React.FC = () => {
                 <span key={i} className="material-icons text-[#FCD34D] text-xl">star</span>
               ))}
             </div>
-            <p className="font-manrope text-base text-[#4b5563] leading-relaxed mb-6">
+            <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed mb-6">
               "Best real estate experience ever. The AI recommendations were spot-on and saved us months of searching."
             </p>
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-[#060D1F] rounded-full" />
               <div>
                 <div className="font-syne font-bold text-sm text-white">Emily Rodriguez</div>
-                <div className="font-manrope text-xs text-[#6b7280]">Austin, TX</div>
+                <div className="font-manrope text-xs text-[#94A3B8]">Austin, TX</div>
               </div>
             </div>
           </div>

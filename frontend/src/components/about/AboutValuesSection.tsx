@@ -51,7 +51,7 @@ const AboutValuesSection: React.FC = () => {
               </h3>
 
               {/* Description */}
-              <p className="font-manrope font-extralight text-sm leading-[22.75px] text-[#4b5563]">
+              <p className="font-manrope font-extralight text-sm leading-[22.75px] text-[#CBD5E1]">
                 {value.description}
               </p>
             </div>

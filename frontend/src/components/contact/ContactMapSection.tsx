@@ -24,7 +24,7 @@ const ContactMapSection: React.FC = () => {
               <span className="material-icons text-xl sm:text-2xl text-[#D4755B] group-hover:scale-110 transition-transform flex-shrink-0">location_on</span>
               <div className="text-left min-w-0">
                 <p className="font-syne font-bold text-sm sm:text-base text-white mb-0.5 truncate">Riva Properties Office</p>
-                <p className="font-manrope font-extralight text-xs text-[#64748B] truncate">Click to view on Google Maps</p>
+                <p className="font-manrope font-extralight text-xs text-[#94A3B8] truncate">Click to view on Google Maps</p>
               </div>
               <span className="material-icons text-[#D4755B] flex-shrink-0">arrow_forward</span>
             </a>

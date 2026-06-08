@@ -31,7 +31,7 @@ const SignInForm: React.FC<SignInFormProps> = ({ onSubmit }) => {
     <form onSubmit={handleSubmit} className="space-y-5">
       {/* Email Input */}
       <div>
-        <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+        <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
           Email Address
         </label>
         <div className="relative">
@@ -42,7 +42,7 @@ const SignInForm: React.FC<SignInFormProps> = ({ onSubmit }) => {
             value={formData.email}
             onChange={handleInputChange}
             placeholder="john.doe@example.com"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg pl-12 pr-4 py-3.5 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg pl-12 pr-4 py-3.5 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
         </div>
@@ -50,7 +50,7 @@ const SignInForm: React.FC<SignInFormProps> = ({ onSubmit }) => {
 
       {/* Password Input */}
       <div>
-        <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+        <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
           Password
         </label>
         <div className="relative">
@@ -61,7 +61,7 @@ const SignInForm: React.FC<SignInFormProps> = ({ onSubmit }) => {
             value={formData.password}
             onChange={handleInputChange}
             placeholder="Enter your password"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg pl-12 pr-12 py-3.5 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#0A1628] border border-[#1E3A5F] rounded-lg pl-12 pr-12 py-3.5 font-manrope font-extralight text-sm text-white placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
             required
           />
           <button
@@ -82,9 +82,9 @@ const SignInForm: React.FC<SignInFormProps> = ({ onSubmit }) => {
             name="rememberMe"
             checked={formData.rememberMe}
             onChange={handleInputChange}
-            className="w-4 h-4 rounded border-[#E6E0DA] text-[#D4755B] focus:ring-[#D4755B]"
+            className="w-4 h-4 rounded border-[#1E3A5F] text-[#D4755B] focus:ring-[#D4755B]"
           />
-          <span className="font-manrope font-extralight text-sm text-[#4B5563]">
+          <span className="font-manrope font-extralight text-sm text-[#CBD5E1]">
             Remember me
           </span>
         </label>

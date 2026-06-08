@@ -175,7 +175,7 @@ const MyListingsPage: React.FC = () => {
             </svg>
           </div>
           <h2 className="font-fraunces text-3xl font-bold text-white mb-3">No listings yet</h2>
-          <p className="font-manrope text-[#6B7280] mb-8">
+          <p className="font-manrope text-[#94A3B8] mb-8">
             You haven't posted any properties. List your first property and reach thousands of buyers.
           </p>
           <Link
@@ -210,7 +210,7 @@ const MyListingsPage: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
           <div>
             <h1 className="font-fraunces text-4xl font-bold text-white">My Listings</h1>
-            <p className="font-manrope text-[#6B7280] mt-1">
+            <p className="font-manrope text-[#94A3B8] mt-1">
               {counts.all} {counts.all === 1 ? 'property' : 'properties'} total
             </p>
           </div>
@@ -289,7 +289,7 @@ const MyListingsPage: React.FC = () => {
                     </div>
 
                     {/* Meta */}
-                    <p className="font-manrope text-sm text-[#6B7280] mb-2 flex items-center gap-1">
+                    <p className="font-manrope text-sm text-[#94A3B8] mb-2 flex items-center gap-1">
                       <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />

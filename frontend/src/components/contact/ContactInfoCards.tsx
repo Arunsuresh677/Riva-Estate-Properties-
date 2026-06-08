@@ -15,7 +15,7 @@ const ContactInfoCards: React.FC = () => {
             <h3 className="font-syne font-bold text-lg text-white mb-2">
               Visit Our Office
             </h3>
-            <p className="font-manrope font-extralight text-sm text-[#4B5563] leading-relaxed mb-3">
+            <p className="font-manrope font-extralight text-sm text-[#CBD5E1] leading-relaxed mb-3">
               12, Highlands Residency,<br />
               Near Botanical Garden,<br />
               Garden Road, Ooty – 643 001
@@ -50,7 +50,7 @@ const ContactInfoCards: React.FC = () => {
             <div className="space-y-2">
               <a 
                 href="tel:+919876543210" 
-                className="flex items-center gap-2 font-manrope font-extralight text-sm text-[#4B5563] hover:text-[#D4755B] transition-colors"
+                className="flex items-center gap-2 font-manrope font-extralight text-sm text-[#CBD5E1] hover:text-[#D4755B] transition-colors"
               >
                 <span className="material-icons text-base">
                   call
@@ -59,7 +59,7 @@ const ContactInfoCards: React.FC = () => {
               </a>
               <a 
                 href="mailto:hello@rivaproperties.com" 
-                className="flex items-center gap-2 font-manrope font-extralight text-sm text-[#4B5563] hover:text-[#D4755B] transition-colors"
+                className="flex items-center gap-2 font-manrope font-extralight text-sm text-[#CBD5E1] hover:text-[#D4755B] transition-colors"
               >
                 <span className="material-icons text-base">
                   email
@@ -83,7 +83,7 @@ const ContactInfoCards: React.FC = () => {
             <h3 className="font-syne font-bold text-lg text-white mb-3">
               Business Hours
             </h3>
-            <div className="space-y-2 font-manrope font-extralight text-sm text-[#4B5563]">
+            <div className="space-y-2 font-manrope font-extralight text-sm text-[#CBD5E1]">
               <div className="flex justify-between items-center">
                 <span>Mon - Fri:</span>
                 <span className="font-medium text-white">09:00 - 18:00</span>

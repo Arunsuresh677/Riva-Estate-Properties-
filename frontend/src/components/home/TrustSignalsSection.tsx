@@ -35,7 +35,7 @@ const TrustSignalsSection: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-syne font-bold text-xl text-white mb-2">Verified Listings Only</h4>
-                <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
+                <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed">
                   Every property on our platform is physically verified by our team to
                   ensure what you see is what you get.
                 </p>
@@ -51,7 +51,7 @@ const TrustSignalsSection: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-syne font-bold text-xl text-white mb-2">24/7 Concierge Support</h4>
-                <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
+                <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed">
                   Our dedicated team is always available to answer questions,
                   schedule viewings, and provide expert advice.
                 </p>
@@ -67,7 +67,7 @@ const TrustSignalsSection: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-syne font-bold text-xl text-white mb-2">Transparent Pricing</h4>
-                <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
+                <p className="font-manrope text-base text-[#CBD5E1] leading-relaxed">
                   No hidden fees. We provide clear, upfront cost breakdowns so you
                   can budget with confidence.
                 </p>

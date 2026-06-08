@@ -153,7 +153,7 @@ const AddPropertyPage: React.FC = () => {
             </svg>
           </div>
           <h2 className="font-fraunces text-3xl font-bold text-white mb-3">Listing Submitted!</h2>
-          <p className="font-manrope text-[#6B7280] mb-8">
+          <p className="font-manrope text-[#94A3B8] mb-8">
             Your property listing is under review. Our team will approve it within 24–48 hours.
             You'll receive an email once it goes live.
           </p>
@@ -189,7 +189,7 @@ const AddPropertyPage: React.FC = () => {
           <h1 className="font-fraunces text-4xl font-bold text-white mb-2">
             List Your Property
           </h1>
-          <p className="font-manrope text-[#6B7280]">
+          <p className="font-manrope text-[#94A3B8]">
             Fill in the details below. Your listing will be reviewed by our team before going live.
           </p>
         </div>
@@ -367,7 +367,7 @@ const AddPropertyPage: React.FC = () => {
               </div>
               <div>
                 <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
-                  Google Maps Link <span className="text-[#6B7280] font-normal">(optional)</span>
+                  Google Maps Link <span className="text-[#94A3B8] font-normal">(optional)</span>
                 </label>
                 <input
                   name="googleMapLink"
@@ -424,7 +424,7 @@ const AddPropertyPage: React.FC = () => {
             <h2 className="font-fraunces text-xl font-semibold text-white mb-1">
               Images <span className="text-red-500">*</span>
             </h2>
-            <p className="font-manrope text-sm text-[#6B7280] mb-4">
+            <p className="font-manrope text-sm text-[#94A3B8] mb-4">
               Upload up to 4 images (JPG, PNG, WebP). First image will be the cover.
             </p>
 

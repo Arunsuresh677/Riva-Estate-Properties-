@@ -65,22 +65,22 @@ const PropertyLocation: React.FC<PropertyLocationProps> = ({ address, city, stat
       {/* Section Header */}
       <div className="flex items-center gap-3 mb-6">
         <div className="w-1 h-6 bg-[#D4755B] rounded-full" />
-        <h2 className="font-syne text-2xl text-[#0F172A]">
+        <h2 className="font-syne text-2xl text-white">
           Location
         </h2>
       </div>
 
       {/* Address Card */}
-      <div className="bg-white border border-[#E6E0DA] rounded-xl p-6 mb-6">
+      <div className="bg-[#0D1B35] border border-[#1E3A5F] rounded-xl p-6 mb-6">
         <div className="flex items-start gap-4">
           <div className="w-10 h-10 bg-[rgba(212,117,91,0.1)] rounded-full flex items-center justify-center flex-shrink-0">
             <MapPin className="w-5 h-5 text-[#D4755B]" />
           </div>
           <div className="flex-1">
-            <h3 className="font-manrope font-medium text-base text-[#0F172A] mb-1">
+            <h3 className="font-manrope font-medium text-base text-white mb-1">
               {displayTitle}
             </h3>
-            <p className="font-manrope font-extralight text-sm text-[#64748B] leading-relaxed">
+            <p className="font-manrope font-extralight text-sm text-[#94A3B8] leading-relaxed">
               {displayAddress}
             </p>
           </div>
@@ -99,7 +99,7 @@ const PropertyLocation: React.FC<PropertyLocationProps> = ({ address, city, stat
       </div>
 
       {/* Map / Placeholder */}
-      <div className="relative aspect-[690/280] rounded-xl overflow-hidden border border-[#E6E0DA] bg-gray-100">
+      <div className="relative aspect-[690/280] rounded-xl overflow-hidden border border-[#1E3A5F] bg-gray-100">
         {hasMap ? (
           <iframe
             src={embedUrl}
@@ -118,7 +118,7 @@ const PropertyLocation: React.FC<PropertyLocationProps> = ({ address, city, stat
             <div className="w-16 h-16 bg-white/80 rounded-full flex items-center justify-center shadow-sm">
               <MapPin className="w-8 h-8 text-[#D4755B]/60" />
             </div>
-            <p className="font-manrope text-sm text-[#64748B]">
+            <p className="font-manrope text-sm text-[#94A3B8]">
               Map not available for this property
             </p>
             <p className="font-manrope text-xs text-[#94A3B8]">

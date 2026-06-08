@@ -67,7 +67,7 @@ const ContactFormCard: React.FC = () => {
         {/* First Name & Last Name Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+            <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
               First Name
             </label>
             <input
@@ -82,7 +82,7 @@ const ContactFormCard: React.FC = () => {
           </div>
 
           <div>
-            <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+            <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
               Last Name
             </label>
             <input
@@ -99,7 +99,7 @@ const ContactFormCard: React.FC = () => {
 
         {/* Email */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             Email
           </label>
           <input
@@ -115,7 +115,7 @@ const ContactFormCard: React.FC = () => {
 
         {/* Phone Number */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             Phone Number
           </label>
           <input
@@ -131,7 +131,7 @@ const ContactFormCard: React.FC = () => {
 
         {/* Message */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wider mb-2">
             Message
           </label>
           <textarea

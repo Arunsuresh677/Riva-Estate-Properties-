@@ -48,13 +48,13 @@ const AboutHeritageSection: React.FC = () => {
 
             {/* Description Paragraphs */}
             <div className="space-y-6 mb-8">
-              <p className="font-manrope font-extralight text-base leading-[26px] text-[#4b5563]">
+              <p className="font-manrope font-extralight text-base leading-[26px] text-[#CBD5E1]">
                 Founded by architects and data scientists, Riva Properties emerged from a
                 simple observation: the search for a home had become a transaction, losing
                 the emotional resonance of finding one's sanctuary.
               </p>
 
-              <p className="font-manrope font-extralight text-base leading-[26px] text-[#4b5563]">
+              <p className="font-manrope font-extralight text-base leading-[26px] text-[#CBD5E1]">
                 We set out to bridge the gap between cold data and warm living spaces. By
                 harnessing advanced AI, we don't just match square footage; we match
                 lifestyles, aesthetics, and the intangible feelings that make a house a home.
