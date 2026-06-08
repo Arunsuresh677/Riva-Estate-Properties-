@@ -3,11 +3,11 @@ import teamImage from '../../images/Team section.jpg';
 
 const TrustSignalsSection: React.FC = () => {
   return (
-    <section className="bg-[#F8F6F6] py-24">
+    <section className="bg-[#060D1F] py-24">
       <div className="max-w-[1280px] mx-auto px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="font-fraunces text-5xl text-[#111827] mb-6">Redefining Real Estate</h2>
+          <h2 className="font-fraunces text-5xl text-white mb-6">Redefining Real Estate</h2>
           <div className="w-24 h-1 bg-[#D4755B] mx-auto" />
         </div>
 
@@ -29,12 +29,12 @@ const TrustSignalsSection: React.FC = () => {
             {/* Feature 1 */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-white rounded-lg shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1)] flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#0D1627] rounded-lg shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1)] flex items-center justify-center">
                   <span className="font-material-icons text-2xl text-[#D4755B]">verified_user</span>
                 </div>
               </div>
               <div>
-                <h4 className="font-syne font-bold text-xl text-[#111827] mb-2">Verified Listings Only</h4>
+                <h4 className="font-syne font-bold text-xl text-white mb-2">Verified Listings Only</h4>
                 <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
                   Every property on our platform is physically verified by our team to
                   ensure what you see is what you get.
@@ -45,12 +45,12 @@ const TrustSignalsSection: React.FC = () => {
             {/* Feature 2 */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-white rounded-lg shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1)] flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#0D1627] rounded-lg shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1)] flex items-center justify-center">
                   <span className="font-material-icons text-2xl text-[#D4755B]">support_agent</span>
                 </div>
               </div>
               <div>
-                <h4 className="font-syne font-bold text-xl text-[#111827] mb-2">24/7 Concierge Support</h4>
+                <h4 className="font-syne font-bold text-xl text-white mb-2">24/7 Concierge Support</h4>
                 <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
                   Our dedicated team is always available to answer questions,
                   schedule viewings, and provide expert advice.
@@ -61,12 +61,12 @@ const TrustSignalsSection: React.FC = () => {
             {/* Feature 3 */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-white rounded-lg shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1)] flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#0D1627] rounded-lg shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1)] flex items-center justify-center">
                   <span className="font-material-icons text-2xl text-[#D4755B]">savings</span>
                 </div>
               </div>
               <div>
-                <h4 className="font-syne font-bold text-xl text-[#111827] mb-2">Transparent Pricing</h4>
+                <h4 className="font-syne font-bold text-xl text-white mb-2">Transparent Pricing</h4>
                 <p className="font-manrope text-base text-[#4b5563] leading-relaxed">
                   No hidden fees. We provide clear, upfront cost breakdowns so you
                   can budget with confidence.
