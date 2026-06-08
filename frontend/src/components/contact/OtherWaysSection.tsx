@@ -38,11 +38,11 @@ const OtherWaysSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F2EFE9] py-16 md:py-24">
+    <section className="bg-[#0A1628] py-16 md:py-24">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-16">
-          <h2 className="font-syne font-bold text-2xl sm:text-3xl md:text-4xl text-[#221410] mb-4">
+          <h2 className="font-syne font-bold text-2xl sm:text-3xl md:text-4xl text-white mb-4">
             Other Ways to Connect
           </h2>
           <p className="font-manrope text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
@@ -65,7 +65,7 @@ const OtherWaysSection: React.FC = () => {
               </div>
 
               {/* Title */}
-              <h3 className="font-syne font-bold text-xl text-[#221410] mb-3">
+              <h3 className="font-syne font-bold text-xl text-white mb-3">
                 {method.title}
               </h3>
 
