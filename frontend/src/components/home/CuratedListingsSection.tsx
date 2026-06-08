@@ -9,14 +9,14 @@ const CuratedListingsSection: React.FC = () => {
   const propertyImages = [glassPavilion, skylinePenthouse, desertOasis, coastalRetreat];
 
   return (
-    <section className="bg-[#F9F7F2] py-16 md:py-24 relative overflow-hidden">
+    <section className="bg-[#0A1628] py-16 md:py-24 relative overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-10 md:mb-16">
           <div>
             <div className="font-space-mono text-sm text-[#D4755B] uppercase tracking-widest mb-3 md:mb-4">Exclusive Selection</div>
-            <h2 className="font-fraunces text-3xl md:text-5xl text-[#111827]">Curated Listings</h2>
+            <h2 className="font-fraunces text-3xl md:text-5xl text-white">Curated Listings</h2>
           </div>
           <Link to="/properties" className="inline-flex items-center gap-2 font-manrope font-bold text-[#D4755B] hover:gap-4 transition-all self-start sm:self-auto">
             View All Properties
@@ -110,7 +110,7 @@ const CuratedListingsSection: React.FC = () => {
                 <p className="font-manrope text-white/70 mb-4 md:mb-6">Kotagiri, Tamil Nadu</p>
                 <div className="border-t border-white/20 pt-4 md:pt-6 flex items-center justify-between">
                   <span className="font-space-mono text-white text-lg">₹15.00 Cr</span>
-                  <Link to="/properties" className="text-white hover:bg-white/10 p-2 rounded-full transition-all">
+                  <Link to="/properties" className="text-white hover:bg-[#0D1627]/10 p-2 rounded-full transition-all">
                     <span className="font-material-icons text-2xl">arrow_forward</span>
                   </Link>
                 </div>
