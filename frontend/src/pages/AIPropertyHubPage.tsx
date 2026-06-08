@@ -131,7 +131,7 @@ const AIHubProductionPage: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#FAF8F4]">
+    <div className="bg-[#060D1F] min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-[#221410] overflow-hidden">
         {/* Decorative blurs */}

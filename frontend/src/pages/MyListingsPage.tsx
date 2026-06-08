@@ -140,7 +140,7 @@ const MyListingsPage: React.FC = () => {
 
   if (isLoading || fetchLoading) {
     return (
-      <div className="min-h-screen bg-[#FAF8F4]">
+      <div className="min-h-screen bg-[#060D1F]">
         <Navbar />
         <div className="max-w-5xl mx-auto px-4 py-16">
           <div className="h-8 w-48 bg-[#E6E0DA] rounded animate-pulse mb-10" />
@@ -165,7 +165,7 @@ const MyListingsPage: React.FC = () => {
 
   if (!fetchLoading && listings.length === 0) {
     return (
-      <div className="min-h-screen bg-[#FAF8F4]">
+      <div className="min-h-screen bg-[#060D1F]">
         <Navbar />
         <div className="max-w-xl mx-auto px-4 py-24 text-center">
           <div className="w-20 h-20 bg-[#F3EDE8] rounded-full flex items-center justify-center mx-auto mb-6">
@@ -201,7 +201,7 @@ const MyListingsPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F4]">
+    <div className="min-h-screen bg-[#060D1F]">
       <Navbar />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">

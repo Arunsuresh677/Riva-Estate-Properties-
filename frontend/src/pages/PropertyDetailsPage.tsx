@@ -80,7 +80,7 @@ const PropertyDetailsPage: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="bg-white min-h-screen">
+      <div className="bg-[#060D1F] min-h-screen">
         <Navbar />
         <LoadingState message="Loading property details..." />
         <SimpleFooter />
@@ -90,7 +90,7 @@ const PropertyDetailsPage: React.FC = () => {
 
   if (error || !property) {
     return (
-      <div className="bg-white min-h-screen">
+      <div className="bg-[#060D1F] min-h-screen">
         <Navbar />
         <div className="flex items-center justify-center py-32">
           <div className="text-center">
@@ -132,7 +132,7 @@ const PropertyDetailsPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[#060D1F] min-h-screen">
       {/* Property Structured Data for SEO */}
       <StructuredData
         type="property"
