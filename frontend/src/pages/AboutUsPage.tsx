@@ -16,7 +16,7 @@ const AboutUsPage: React.FC = () => {
   });
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[#060D1F] min-h-screen">
       {/* Sticky Navigation */}
       <Navbar />
 
