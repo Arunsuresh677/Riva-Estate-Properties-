@@ -46,19 +46,17 @@ const properties = [
 
 const CuratedListingsSection: React.FC = () => {
   const [current, setCurrent] = useState(0);
-  const [flipping, setFlipping] = useState(false);
+  const [sliding, setSliding] = useState(false);
   const [direction, setDirection] = useState<'next' | 'prev'>('next');
-  const [displayed, setDisplayed] = useState(0);
   const autoRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const goTo = (index: number, dir: 'next' | 'prev') => {
-    if (flipping) return;
+    if (sliding) return;
     setDirection(dir);
-    setFlipping(true);
+    setSliding(true);
     setTimeout(() => {
-      setDisplayed(index);
       setCurrent(index);
-      setFlipping(false);
+      setSliding(false);
     }, 500);
   };
 
@@ -68,9 +66,7 @@ const CuratedListingsSection: React.FC = () => {
   useEffect(() => {
     autoRef.current = setInterval(next, 4000);
     return () => { if (autoRef.current) clearInterval(autoRef.current); };
-  }, [current, flipping]);
-
-  const prop = properties[displayed];
+  }, [current, sliding]);
 
   return (
     <section className="bg-[#F9F7F2] py-24 relative overflow-hidden">
@@ -88,70 +84,74 @@ const CuratedListingsSection: React.FC = () => {
           </Link>
         </div>
 
-        {/* 3D Flip Slideshow */}
-        <div className="relative w-full" style={{ perspective: '1200px' }}>
+        {/* Slideshow Container */}
+        <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl" style={{ height: '580px' }}>
+
+          {/* Slides */}
           <div
-            className="relative w-full rounded-2xl overflow-hidden shadow-2xl"
+            className="flex h-full"
             style={{
-              height: '580px',
-              transformStyle: 'preserve-3d',
-              transition: flipping ? 'transform 0.5s ease' : 'none',
-              transform: flipping
-                ? direction === 'next'
-                  ? 'rotateY(-90deg)'
-                  : 'rotateY(90deg)'
-                : 'rotateY(0deg)',
+              width: `${properties.length * 100}%`,
+              transform: `translateX(-${(current * 100) / properties.length}%)`,
+              transition: sliding ? 'transform 0.6s cubic-bezier(0.77, 0, 0.175, 1)' : 'none',
             }}
           >
-            {/* Image */}
-            <img
-              src={prop.image}
-              alt={prop.title}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+            {properties.map((prop, i) => (
+              <div
+                key={i}
+                className="relative flex-shrink-0"
+                style={{ width: `${100 / properties.length}%` }}
+              >
+                <img
+                  src={prop.image}
+                  alt={prop.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
 
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                {/* Tag */}
+                <div className="absolute top-6 left-6">
+                  <span className="bg-[#D4755B] text-white font-manrope font-bold text-xs px-3 py-1 rounded">
+                    {prop.tag}
+                  </span>
+                </div>
 
-            {/* Tag */}
-            <div className="absolute top-6 left-6">
-              <span className="bg-[#D4755B] text-white font-manrope font-bold text-xs px-3 py-1 rounded">
-                {prop.tag}
-              </span>
-            </div>
+                {/* Slide Counter */}
+                <div className="absolute top-6 right-6 font-space-mono text-white/70 text-sm">
+                  {String(i + 1).padStart(2, '0')} / {String(properties.length).padStart(2, '0')}
+                </div>
 
-            {/* Slide Counter */}
-            <div className="absolute top-6 right-6 font-space-mono text-white/70 text-sm">
-              {String(displayed + 1).padStart(2, '0')} / {String(properties.length).padStart(2, '0')}
-            </div>
-
-            {/* Property Info */}
-            <div className="absolute bottom-0 left-0 right-0 p-10">
-              <h3 className="font-fraunces text-4xl text-white mb-2">{prop.title}</h3>
-              <p className="font-manrope font-light text-white/75 mb-6">{prop.location}</p>
-              <div className="border-t border-white/20 pt-6 flex items-center justify-between">
-                <span className="font-space-mono text-2xl text-white">{prop.price}</span>
-                <div className="flex items-center gap-6 text-white/80">
-                  <div className="flex items-center gap-2">
-                    <span className="material-icons text-sm">bed</span>
-                    <span className="font-space-mono text-sm">{prop.beds} Beds</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="material-icons text-sm">square_foot</span>
-                    <span className="font-space-mono text-sm">{prop.sqft} sqft</span>
+                {/* Property Info */}
+                <div className="absolute bottom-0 left-0 right-0 p-10">
+                  <h3 className="font-fraunces text-4xl text-white mb-2">{prop.title}</h3>
+                  <p className="font-manrope font-light text-white/75 mb-6">{prop.location}</p>
+                  <div className="border-t border-white/20 pt-6 flex items-center justify-between">
+                    <span className="font-space-mono text-2xl text-white">{prop.price}</span>
+                    <div className="flex items-center gap-6 text-white/80">
+                      <div className="flex items-center gap-2">
+                        <span className="material-icons text-sm">bed</span>
+                        <span className="font-space-mono text-sm">{prop.beds} Beds</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="material-icons text-sm">square_foot</span>
+                        <span className="font-space-mono text-sm">{prop.sqft} sqft</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
 
-          {/* Prev / Next Buttons */}
+          {/* Prev Button */}
           <button
             onClick={prev}
             className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition-all shadow-lg"
           >
             <span className="material-icons">chevron_left</span>
           </button>
+
+          {/* Next Button */}
           <button
             onClick={next}
             className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition-all shadow-lg"
@@ -174,6 +174,7 @@ const CuratedListingsSection: React.FC = () => {
             />
           ))}
         </div>
+
       </div>
     </section>
   );
