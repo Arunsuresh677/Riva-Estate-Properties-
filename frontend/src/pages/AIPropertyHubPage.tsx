@@ -274,7 +274,7 @@ const AIPropertyHubPage: React.FC = () => {
   /* ── AI Hub disabled → show "download & run locally" page ── */
   if (!AI_HUB_ENABLED) {
     return (
-      <div className="bg-[#FAF8F4] min-h-screen">
+      <div className="bg-[#060D1F] min-h-screen">
         <Navbar />
         <AIHubProductionPage />
         <Footer />
@@ -429,7 +429,7 @@ const AIHubDevPage: React.FC = () => {
   /* ── Render ──────────────────────────────────────────── */
 
   return (
-    <div className="bg-[#FAF8F4] min-h-screen">
+    <div className="bg-[#060D1F] min-h-screen">
       <Navbar />
 
       {/* Hero — search form */}
