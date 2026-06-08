@@ -51,7 +51,7 @@ const ContactFormCard: React.FC = () => {
   };
 
   return (
-    <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-sm">
+    <div className="bg-white border border-[#E6E0DA] rounded-2xl p-5 sm:p-6 md:p-8 shadow-sm">
       {/* Card Header */}
       <div className="mb-8">
         <h2 className="font-syne font-bold text-2xl text-[#221410] mb-2">
