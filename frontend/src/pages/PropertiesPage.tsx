@@ -395,7 +395,7 @@ const PropertiesPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
       {/* Sticky Navigation */}
       <Navbar />
 
