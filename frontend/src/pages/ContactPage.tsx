@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
   });
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
       {/* Navigation */}
       <Navbar />
 
@@ -25,7 +25,7 @@ const ContactPage: React.FC = () => {
       <ContactHeroSection />
 
       {/* Contact Form & Info Cards Section */}
-      <section className="bg-white py-10 md:py-16">
+      <section className="bg-[#FAF8F4] py-10 md:py-16">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Left - Contact Form (2/3 width) */}
