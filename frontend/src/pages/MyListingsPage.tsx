@@ -146,7 +146,7 @@ const MyListingsPage: React.FC = () => {
           <div className="h-8 w-48 bg-[#E6E0DA] rounded animate-pulse mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[...Array(3)].map((_, i) => (
-              <div key={i} className="bg-white border border-[#E6E0DA] rounded-2xl overflow-hidden">
+              <div key={i} className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl overflow-hidden">
                 <div className="h-44 bg-[#E6E0DA] animate-pulse" />
                 <div className="p-4 space-y-3">
                   <div className="h-4 bg-[#E6E0DA] rounded animate-pulse w-3/4" />
@@ -174,7 +174,7 @@ const MyListingsPage: React.FC = () => {
                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
             </svg>
           </div>
-          <h2 className="font-fraunces text-3xl font-bold text-[#221410] mb-3">No listings yet</h2>
+          <h2 className="font-fraunces text-3xl font-bold text-white mb-3">No listings yet</h2>
           <p className="font-manrope text-[#6B7280] mb-8">
             You haven't posted any properties. List your first property and reach thousands of buyers.
           </p>
@@ -209,7 +209,7 @@ const MyListingsPage: React.FC = () => {
         {/* ── Header ── */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
           <div>
-            <h1 className="font-fraunces text-4xl font-bold text-[#221410]">My Listings</h1>
+            <h1 className="font-fraunces text-4xl font-bold text-white">My Listings</h1>
             <p className="font-manrope text-[#6B7280] mt-1">
               {counts.all} {counts.all === 1 ? 'property' : 'properties'} total
             </p>
@@ -230,12 +230,12 @@ const MyListingsPage: React.FC = () => {
           {(['active', 'pending', 'rejected', 'expired'] as const).map((status) => {
             const cfg = STATUS_CONFIG[status];
             return (
-              <div key={status} className="bg-white border border-[#E6E0DA] rounded-xl p-4">
+              <div key={status} className="bg-[#0D1B35] border border-[#1E3A5F] rounded-xl p-4">
                 <div className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-manrope font-medium ${cfg.bg} ${cfg.text} mb-2`}>
                   <span className={`w-1.5 h-1.5 rounded-full ${cfg.dot}`} />
                   {cfg.label}
                 </div>
-                <p className="font-fraunces text-2xl font-bold text-[#221410]">{counts[status]}</p>
+                <p className="font-fraunces text-2xl font-bold text-white">{counts[status]}</p>
               </div>
             );
           })}
@@ -253,7 +253,7 @@ const MyListingsPage: React.FC = () => {
             return (
               <div
                 key={listing._id}
-                className="bg-white border border-[#E6E0DA] rounded-2xl overflow-hidden flex flex-col sm:flex-row"
+                className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl overflow-hidden flex flex-col sm:flex-row"
               >
                 {/* Thumbnail */}
                 <div className="sm:w-48 sm:flex-shrink-0 h-44 sm:h-auto bg-[#F3EDE8] relative">
@@ -279,7 +279,7 @@ const MyListingsPage: React.FC = () => {
                   <div>
                     {/* Title row */}
                     <div className="flex flex-wrap items-start justify-between gap-2 mb-1">
-                      <h3 className="font-fraunces text-lg font-semibold text-[#221410] leading-snug">
+                      <h3 className="font-fraunces text-lg font-semibold text-white leading-snug">
                         {listing.title}
                       </h3>
                       <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-manrope font-semibold ${cfg.bg} ${cfg.text} flex-shrink-0`}>
@@ -297,7 +297,7 @@ const MyListingsPage: React.FC = () => {
                       {listing.location}
                     </p>
 
-                    <div className="flex flex-wrap gap-3 font-manrope text-sm text-[#374151]">
+                    <div className="flex flex-wrap gap-3 font-manrope text-sm text-[#94A3B8]">
                       <span className="font-semibold text-[#D4755B]">{formatPrice(listing.price)}</span>
                       <span>·</span>
                       <span>{listing.beds} bed · {listing.baths} bath · {listing.sqft.toLocaleString()} sqft</span>
@@ -358,7 +358,7 @@ const MyListingsPage: React.FC = () => {
                       {/* Edit */}
                       <Link
                         to={`/edit-property/${listing._id}`}
-                        className="flex items-center gap-1.5 font-manrope text-xs font-semibold text-[#374151] border border-[#E6E0DA] px-3 py-1.5 rounded-lg hover:border-[#D4755B] hover:text-[#D4755B] transition-colors"
+                        className="flex items-center gap-1.5 font-manrope text-xs font-semibold text-[#94A3B8] border border-[#1E3A5F] px-3 py-1.5 rounded-lg hover:border-[#D4755B] hover:text-[#D4755B] transition-colors"
                       >
                         <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
@@ -391,7 +391,7 @@ const MyListingsPage: React.FC = () => {
           <AlertDialogHeader>
             <AlertDialogTitle>Delete this listing?</AlertDialogTitle>
             <AlertDialogDescription>
-              <strong className="text-[#221410]">{deleteTarget?.title}</strong> will be permanently
+              <strong className="text-white">{deleteTarget?.title}</strong> will be permanently
               removed. This action cannot be undone.
             </AlertDialogDescription>
           </AlertDialogHeader>

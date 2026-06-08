@@ -95,7 +95,7 @@ const PropertyDetailsPage: React.FC = () => {
         <div className="flex items-center justify-center py-32">
           <div className="text-center">
             <span className="material-icons text-5xl text-[#D4755B] mb-4">error_outline</span>
-            <p className="font-manrope text-xl text-[#374151] mb-4">{error || 'Property not found'}</p>
+            <p className="font-manrope text-xl text-[#94A3B8] mb-4">{error || 'Property not found'}</p>
             <Link
               to="/properties"
               className="bg-[#D4755B] text-white font-manrope font-bold px-8 py-3 rounded-lg hover:bg-[#B86851] transition-all inline-block"
@@ -179,7 +179,7 @@ const PropertyDetailsPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Left Column - Main Content */}
             <div className="lg:col-span-2">
-              <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-sm">
+              <div className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-8 shadow-sm">
                 {/* About Section */}
                 <PropertyAbout description={property.description} />
 

@@ -87,17 +87,17 @@ const ResetPasswordPage: React.FC = () => {
         <AuthHeader />
 
         {/* Card */}
-        <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-xl">
+        <div className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-8 shadow-xl">
           {isSuccess ? (
             /* Success State */
             <div className="text-center py-4">
               <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-8 h-8 text-green-500" />
               </div>
-              <h1 className="font-syne font-bold text-2xl text-[#221410] mb-3">
+              <h1 className="font-syne font-bold text-2xl text-white mb-3">
                 Password Reset!
               </h1>
-              <p className="font-manrope font-extralight text-sm text-[#4B5563] mb-6">
+              <p className="font-manrope font-extralight text-sm text-[#94A3B8] mb-6">
                 Your password has been reset successfully. Redirecting you to sign in...
               </p>
               <Link
@@ -114,10 +114,10 @@ const ResetPasswordPage: React.FC = () => {
                 <div className="w-14 h-14 bg-[#FFF7ED] rounded-full flex items-center justify-center mx-auto mb-5">
                   <Lock className="w-7 h-7 text-[#D4755B]" />
                 </div>
-                <h1 className="font-syne font-bold text-3xl text-[#221410] mb-2">
+                <h1 className="font-syne font-bold text-3xl text-white mb-2">
                   Reset Password
                 </h1>
-                <p className="font-manrope font-extralight text-sm text-[#4B5563]">
+                <p className="font-manrope font-extralight text-sm text-[#94A3B8]">
                   Create a new secure password for your account.
                 </p>
               </div>

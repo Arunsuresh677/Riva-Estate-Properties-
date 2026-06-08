@@ -97,15 +97,15 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
     <div className="p-5 md:p-6 pb-32">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
-        <h2 className="font-manrope font-semibold text-base text-[#111827]">Refine Your Search</h2>
+        <h2 className="font-manrope font-semibold text-base text-[#E2E8F0]">Refine Your Search</h2>
         <button onClick={handleReset} className="font-manrope text-sm text-[#D4755B] hover:underline">
           Reset all
         </button>
       </div>
 
       {/* Location */}
-      <div className="mb-6 pb-6 border-b border-[#F5F1E8]">
-        <h3 className="font-manrope font-bold text-xs text-[#111827] mb-3 uppercase tracking-wider">Location</h3>
+      <div className="mb-6 pb-6 border-b border-[#1E3A5F]">
+        <h3 className="font-manrope font-bold text-xs text-[#E2E8F0] mb-3 uppercase tracking-wider">Location</h3>
         <div className="relative">
           <span className="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-[#9CA3AF] text-lg">location_on</span>
           <input
@@ -113,14 +113,14 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
             value={selectedLocation}
             onChange={e => setSelectedLocation(e.target.value)}
             placeholder="City, neighborhood..."
-            className="w-full pl-9 pr-4 py-2.5 border border-[#E6E0DA] rounded-xl font-manrope text-sm text-[#111827] placeholder:text-[#9CA3AF] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full pl-9 pr-4 py-2.5 border border-[#E6E0DA] rounded-xl font-manrope text-sm text-[#E2E8F0] placeholder:text-[#9CA3AF] focus:outline-none focus:border-[#D4755B] transition-colors"
           />
         </div>
       </div>
 
       {/* Availability */}
-      <div className="mb-6 pb-6 border-b border-[#F5F1E8]">
-        <h3 className="font-manrope font-bold text-xs text-[#111827] mb-3 uppercase tracking-wider">Availability</h3>
+      <div className="mb-6 pb-6 border-b border-[#1E3A5F]">
+        <h3 className="font-manrope font-bold text-xs text-[#E2E8F0] mb-3 uppercase tracking-wider">Availability</h3>
         <div className="flex gap-3">
           {['buy', 'rent'].map(type => (
             <button
@@ -129,7 +129,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
               className={`flex-1 py-2.5 rounded-xl border font-manrope font-bold text-sm capitalize transition-all ${
                 selectedAvailability === type
                   ? 'bg-[#D4755B] border-[#D4755B] text-white shadow-md'
-                  : 'bg-white border-[#E6E0DA] text-[#6B7280] hover:border-[#D4755B]'
+                  : 'bg-[#0D1B35] border-[#1E3A5F] text-[#94A3B8] hover:border-[#D4755B]'
               }`}
             >
               {type === 'buy' ? 'Buy' : 'Rent'}
@@ -139,9 +139,9 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
       </div>
 
       {/* Price Range */}
-      <div className="mb-6 pb-6 border-b border-[#F5F1E8]">
+      <div className="mb-6 pb-6 border-b border-[#1E3A5F]">
         <div className="flex items-center justify-between mb-3">
-          <h3 className="font-manrope font-bold text-xs text-[#111827] uppercase tracking-wider">Price Range</h3>
+          <h3 className="font-manrope font-bold text-xs text-[#E2E8F0] uppercase tracking-wider">Price Range</h3>
           <span className="font-manrope text-xs text-[#D4755B] font-semibold">
             ₹{formatPriceLabel(priceRange[0])} – {formatPriceLabel(priceRange[1])}
           </span>
@@ -149,12 +149,12 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
         <label className="font-manrope text-xs text-[#9CA3AF] mb-1 block">Min</label>
         <input type="range" min="0" max="200" step="1" value={priceRange[0]}
           onChange={e => { const v = parseInt(e.target.value); if (v < priceRange[1]) setPriceRange([v, priceRange[1]]); }}
-          className="w-full h-1.5 bg-[#E6E0DA] rounded-full appearance-none cursor-pointer accent-[#D4755B] mb-3"
+          className="w-full h-1.5 bg-[#1E3A5F] rounded-full appearance-none cursor-pointer accent-[#D4755B] mb-3"
         />
         <label className="font-manrope text-xs text-[#9CA3AF] mb-1 block">Max</label>
         <input type="range" min="0" max="200" step="1" value={priceRange[1]}
           onChange={e => { const v = parseInt(e.target.value); if (v > priceRange[0]) setPriceRange([priceRange[0], v]); }}
-          className="w-full h-1.5 bg-[#E6E0DA] rounded-full appearance-none cursor-pointer accent-[#D4755B]"
+          className="w-full h-1.5 bg-[#1E3A5F] rounded-full appearance-none cursor-pointer accent-[#D4755B]"
         />
         <div className="flex justify-between mt-1">
           <span className="font-manrope text-xs text-[#9CA3AF]">₹0</span>
@@ -163,8 +163,8 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
       </div>
 
       {/* Property Type */}
-      <div className="mb-6 pb-6 border-b border-[#F5F1E8]">
-        <h3 className="font-manrope font-bold text-xs text-[#111827] mb-3 uppercase tracking-wider">Property Type</h3>
+      <div className="mb-6 pb-6 border-b border-[#1E3A5F]">
+        <h3 className="font-manrope font-bold text-xs text-[#E2E8F0] mb-3 uppercase tracking-wider">Property Type</h3>
         <div className="grid grid-cols-2 gap-3">
           {propertyTypes.map(type => (
             <button key={type.id} onClick={() => togglePropertyType(type.label)}
@@ -182,13 +182,13 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
       </div>
 
       {/* Bedrooms */}
-      <div className="mb-6 pb-6 border-b border-[#F5F1E8]">
-        <h3 className="font-manrope font-bold text-xs text-[#111827] mb-3 uppercase tracking-wider">Bedrooms</h3>
+      <div className="mb-6 pb-6 border-b border-[#1E3A5F]">
+        <h3 className="font-manrope font-bold text-xs text-[#E2E8F0] mb-3 uppercase tracking-wider">Bedrooms</h3>
         <div className="flex gap-2">
           {[0, 1, 2, 3, 4, 5].map(num => (
             <button key={num} onClick={() => setBedrooms(num)}
               className={`flex-1 h-9 rounded-lg font-manrope font-bold text-sm border transition-all ${
-                bedrooms === num ? 'bg-[#D4755B] border-[#D4755B] text-white' : 'bg-white border-[#E6E0DA] text-[#6B7280] hover:border-[#D4755B]'
+                bedrooms === num ? 'bg-[#D4755B] border-[#D4755B] text-white' : 'bg-[#0D1B35] border-[#1E3A5F] text-[#94A3B8] hover:border-[#D4755B]'
               }`}
             >
               {num === 0 ? 'Any' : num === 5 ? '5+' : num}
@@ -198,13 +198,13 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
       </div>
 
       {/* Bathrooms */}
-      <div className="mb-6 pb-6 border-b border-[#F5F1E8]">
-        <h3 className="font-manrope font-bold text-xs text-[#111827] mb-3 uppercase tracking-wider">Bathrooms</h3>
+      <div className="mb-6 pb-6 border-b border-[#1E3A5F]">
+        <h3 className="font-manrope font-bold text-xs text-[#E2E8F0] mb-3 uppercase tracking-wider">Bathrooms</h3>
         <div className="flex gap-2">
           {[0, 1, 2, 3, 4].map(num => (
             <button key={num} onClick={() => setBathrooms(num)}
               className={`flex-1 h-9 rounded-lg font-manrope font-bold text-sm border transition-all ${
-                bathrooms === num ? 'bg-[#D4755B] border-[#D4755B] text-white' : 'bg-white border-[#E6E0DA] text-[#6B7280] hover:border-[#D4755B]'
+                bathrooms === num ? 'bg-[#D4755B] border-[#D4755B] text-white' : 'bg-[#0D1B35] border-[#1E3A5F] text-[#94A3B8] hover:border-[#D4755B]'
               }`}
             >
               {num === 0 ? 'Any' : num === 4 ? '4+' : num}
@@ -215,25 +215,25 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
 
       {/* Amenities */}
       <div className="mb-6">
-        <h3 className="font-manrope font-bold text-xs text-[#111827] mb-3 uppercase tracking-wider">Amenities</h3>
+        <h3 className="font-manrope font-bold text-xs text-[#E2E8F0] mb-3 uppercase tracking-wider">Amenities</h3>
         <div className="grid grid-cols-2 gap-2">
           {amenitiesList.map(amenity => (
             <label key={amenity}
               className={`flex items-center gap-2 p-2.5 rounded-lg border cursor-pointer transition-all ${
                 selectedAmenities.includes(amenity)
                   ? 'bg-[rgba(212,117,91,0.05)] border-[#D4755B]'
-                  : 'bg-white border-[#E6E0DA] hover:border-[#D4755B]'
+                  : 'bg-[#0D1B35] border-[#1E3A5F] hover:border-[#D4755B]'
               }`}
             >
               <div className={`w-4 h-4 rounded border flex-shrink-0 flex items-center justify-center transition-colors ${
-                selectedAmenities.includes(amenity) ? 'bg-[#D4755B] border-[#D4755B]' : 'bg-white border-[#D1D5DB]'
+                selectedAmenities.includes(amenity) ? 'bg-[#D4755B] border-[#D4755B]' : 'bg-[#0D1B35] border-[#1E3A5F]'
               }`}>
                 {selectedAmenities.includes(amenity) && (
                   <span className="material-icons text-white" style={{ fontSize: '10px' }}>check</span>
                 )}
               </div>
               <input type="checkbox" className="hidden" checked={selectedAmenities.includes(amenity)} onChange={() => toggleAmenity(amenity)} />
-              <span className={`font-manrope text-xs leading-tight ${selectedAmenities.includes(amenity) ? 'text-[#D4755B] font-semibold' : 'text-[#4B5563]'}`}>
+              <span className={`font-manrope text-xs leading-tight ${selectedAmenities.includes(amenity) ? 'text-[#D4755B] font-semibold' : 'text-[#94A3B8]'}`}>
                 {amenity}
               </span>
             </label>
@@ -270,17 +270,17 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
             onClick={() => setMobileOpen(false)}
           />
           {/* Drawer */}
-          <div className="relative ml-auto w-[88%] max-w-sm bg-white h-full overflow-y-auto shadow-2xl">
+          <div className="relative ml-auto w-[88%] max-w-sm bg-[#0A1628] h-full overflow-y-auto shadow-2xl">
             {/* Drawer Header */}
-            <div className="sticky top-0 bg-white border-b border-[#E6E0DA] px-5 py-4 flex items-center justify-between z-10">
-              <h2 className="font-syne font-bold text-lg text-[#111827]">Filters</h2>
+            <div className="sticky top-0 bg-[#0A1628] border-b border-[#1E3A5F] px-5 py-4 flex items-center justify-between z-10">
+              <h2 className="font-syne font-bold text-lg text-[#E2E8F0]">Filters</h2>
               <button onClick={() => setMobileOpen(false)} className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#F5F1E8] transition-colors">
-                <span className="material-icons text-[#374151]">close</span>
+                <span className="material-icons text-[#94A3B8]">close</span>
               </button>
             </div>
             <FilterContent />
             {/* Sticky Apply Button */}
-            <div className="sticky bottom-0 bg-white border-t border-[#E6E0DA] p-4">
+            <div className="sticky bottom-0 bg-[#0A1628] border-t border-[#1E3A5F] p-4">
               <button
                 onClick={() => setMobileOpen(false)}
                 className="w-full bg-[#D4755B] text-white font-manrope font-bold py-3.5 rounded-xl hover:bg-[#B86851] transition-all shadow-lg"
@@ -293,13 +293,13 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
       )}
 
       {/* Desktop Sidebar */}
-      <div className="hidden md:block w-[280px] lg:w-[340px] bg-white border-r border-[#E6E0DA] h-screen sticky top-20 overflow-y-auto pb-24 shrink-0">
+      <div className="hidden md:block w-[280px] lg:w-[340px] bg-[#0A1628] border-r border-[#1E3A5F] h-screen sticky top-20 overflow-y-auto pb-24 shrink-0">
         <FilterContent />
         {/* Sticky Reset */}
-        <div className="sticky bottom-0 bg-white border-t border-[#E6E0DA] p-4">
+        <div className="sticky bottom-0 bg-[#0A1628] border-t border-[#1E3A5F] p-4">
           <button
             onClick={handleReset}
-            className="w-full bg-white border border-[#D4755B] text-[#D4755B] font-manrope font-bold text-base py-3.5 rounded-xl transition-all hover:bg-[#D4755B] hover:text-white"
+            className="w-full bg-transparent border border-[#D4755B] text-[#D4755B] font-manrope font-bold text-base py-3.5 rounded-xl transition-all hover:bg-[#D4755B] hover:text-white"
           >
             Reset Filters
           </button>

@@ -152,7 +152,7 @@ const AddPropertyPage: React.FC = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h2 className="font-fraunces text-3xl font-bold text-[#221410] mb-3">Listing Submitted!</h2>
+          <h2 className="font-fraunces text-3xl font-bold text-white mb-3">Listing Submitted!</h2>
           <p className="font-manrope text-[#6B7280] mb-8">
             Your property listing is under review. Our team will approve it within 24–48 hours.
             You'll receive an email once it goes live.
@@ -186,7 +186,7 @@ const AddPropertyPage: React.FC = () => {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
         {/* Header */}
         <div className="mb-10">
-          <h1 className="font-fraunces text-4xl font-bold text-[#221410] mb-2">
+          <h1 className="font-fraunces text-4xl font-bold text-white mb-2">
             List Your Property
           </h1>
           <p className="font-manrope text-[#6B7280]">
@@ -197,11 +197,11 @@ const AddPropertyPage: React.FC = () => {
         <form onSubmit={handleSubmit} className="space-y-8">
 
           {/* ── Basic info ── */}
-          <section className="bg-white border border-[#E6E0DA] rounded-2xl p-6 space-y-5">
-            <h2 className="font-fraunces text-xl font-semibold text-[#221410]">Basic Information</h2>
+          <section className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-6 space-y-5">
+            <h2 className="font-fraunces text-xl font-semibold text-white">Basic Information</h2>
 
             <div>
-              <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+              <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                 Title <span className="text-red-500">*</span>
               </label>
               <input
@@ -210,13 +210,13 @@ const AddPropertyPage: React.FC = () => {
                 onChange={handleChange}
                 required
                 placeholder="e.g. Spacious 3 BHK Apartment in Bandra"
-                className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
+                className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+                <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                   Property Type <span className="text-red-500">*</span>
                 </label>
                 <select
@@ -224,7 +224,7 @@ const AddPropertyPage: React.FC = () => {
                   value={form.type}
                   onChange={handleChange}
                   required
-                  className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B] bg-white"
+                  className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#E2E8F0] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B] bg-[#0A1628]"
                 >
                   {PROPERTY_TYPES.map((t) => (
                     <option key={t} value={t}>{t}</option>
@@ -232,7 +232,7 @@ const AddPropertyPage: React.FC = () => {
                 </select>
               </div>
               <div>
-                <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+                <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                   Listing For <span className="text-red-500">*</span>
                 </label>
                 <select
@@ -240,7 +240,7 @@ const AddPropertyPage: React.FC = () => {
                   value={form.availability}
                   onChange={handleChange}
                   required
-                  className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B] bg-white"
+                  className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#E2E8F0] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B] bg-[#0A1628]"
                 >
                   {AVAILABILITY_OPTIONS.map((a) => (
                     <option key={a} value={a}>{a}</option>
@@ -250,7 +250,7 @@ const AddPropertyPage: React.FC = () => {
             </div>
 
             <div>
-              <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+              <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                 Full Address / Location <span className="text-red-500">*</span>
               </label>
               <input
@@ -259,18 +259,18 @@ const AddPropertyPage: React.FC = () => {
                 onChange={handleChange}
                 required
                 placeholder="e.g. 12, MG Road, Bandra West, Mumbai, Maharashtra"
-                className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
+                className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
               />
             </div>
           </section>
 
           {/* ── Price & specs ── */}
-          <section className="bg-white border border-[#E6E0DA] rounded-2xl p-6 space-y-5">
-            <h2 className="font-fraunces text-xl font-semibold text-[#221410]">Price &amp; Details</h2>
+          <section className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-6 space-y-5">
+            <h2 className="font-fraunces text-xl font-semibold text-white">Price &amp; Details</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+                <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                   Price (₹) <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -281,11 +281,11 @@ const AddPropertyPage: React.FC = () => {
                   required
                   min="1"
                   placeholder="e.g. 8500000"
-                  className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
+                  className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
                 />
               </div>
               <div>
-                <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+                <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                   Area (sqft) <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -296,11 +296,11 @@ const AddPropertyPage: React.FC = () => {
                   required
                   min="1"
                   placeholder="e.g. 1200"
-                  className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
+                  className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
                 />
               </div>
               <div>
-                <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+                <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                   Bedrooms <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -311,11 +311,11 @@ const AddPropertyPage: React.FC = () => {
                   required
                   min="0"
                   placeholder="e.g. 3"
-                  className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
+                  className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
                 />
               </div>
               <div>
-                <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+                <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                   Bathrooms <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -326,18 +326,18 @@ const AddPropertyPage: React.FC = () => {
                   required
                   min="0"
                   placeholder="e.g. 2"
-                  className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
+                  className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
                 />
               </div>
             </div>
           </section>
 
           {/* ── Description & contact ── */}
-          <section className="bg-white border border-[#E6E0DA] rounded-2xl p-6 space-y-5">
-            <h2 className="font-fraunces text-xl font-semibold text-[#221410]">Description &amp; Contact</h2>
+          <section className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-6 space-y-5">
+            <h2 className="font-fraunces text-xl font-semibold text-white">Description &amp; Contact</h2>
 
             <div>
-              <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+              <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                 Description <span className="text-red-500">*</span>
               </label>
               <textarea
@@ -347,13 +347,13 @@ const AddPropertyPage: React.FC = () => {
                 required
                 rows={4}
                 placeholder="Describe the property — highlights, surroundings, unique features..."
-                className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B] resize-none"
+                className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B] resize-none"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+                <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                   Contact Phone <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -362,11 +362,11 @@ const AddPropertyPage: React.FC = () => {
                   onChange={handleChange}
                   required
                   placeholder="+91 98765 43210"
-                  className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
+                  className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
                 />
               </div>
               <div>
-                <label className="block font-manrope text-sm font-medium text-[#374151] mb-1">
+                <label className="block font-manrope text-sm font-medium text-[#94A3B8] mb-1">
                   Google Maps Link <span className="text-[#6B7280] font-normal">(optional)</span>
                 </label>
                 <input
@@ -374,15 +374,15 @@ const AddPropertyPage: React.FC = () => {
                   value={form.googleMapLink}
                   onChange={handleChange}
                   placeholder="https://maps.google.com/..."
-                  className="w-full border border-[#E6E0DA] rounded-lg px-4 py-2.5 font-manrope text-sm text-[#221410] focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
+                  className="w-full border border-[#1E3A5F] rounded-lg px-4 py-2.5 font-manrope text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#D4755B]/40 focus:border-[#D4755B]"
                 />
               </div>
             </div>
           </section>
 
           {/* ── Amenities ── */}
-          <section className="bg-white border border-[#E6E0DA] rounded-2xl p-6">
-            <h2 className="font-fraunces text-xl font-semibold text-[#221410] mb-4">Amenities</h2>
+          <section className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-6">
+            <h2 className="font-fraunces text-xl font-semibold text-white mb-4">Amenities</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {AMENITIES_LIST.map((amenity) => {
                 const checked = amenities.includes(amenity);
@@ -392,7 +392,7 @@ const AddPropertyPage: React.FC = () => {
                     className={`flex items-center gap-2 p-3 rounded-lg border cursor-pointer transition-colors select-none ${
                       checked
                         ? 'border-[#D4755B] bg-[#D4755B]/5 text-[#D4755B]'
-                        : 'border-[#E6E0DA] text-[#374151] hover:border-[#D4755B]/50'
+                        : 'border-[#1E3A5F] text-[#94A3B8] hover:border-[#D4755B]/50'
                     }`}
                   >
                     <input
@@ -420,8 +420,8 @@ const AddPropertyPage: React.FC = () => {
           </section>
 
           {/* ── Images ── */}
-          <section className="bg-white border border-[#E6E0DA] rounded-2xl p-6">
-            <h2 className="font-fraunces text-xl font-semibold text-[#221410] mb-1">
+          <section className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-6">
+            <h2 className="font-fraunces text-xl font-semibold text-white mb-1">
               Images <span className="text-red-500">*</span>
             </h2>
             <p className="font-manrope text-sm text-[#6B7280] mb-4">
@@ -432,7 +432,7 @@ const AddPropertyPage: React.FC = () => {
             {previews.length > 0 && (
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
                 {previews.map((src, idx) => (
-                  <div key={idx} className="relative group rounded-lg overflow-hidden aspect-square border border-[#E6E0DA]">
+                  <div key={idx} className="relative group rounded-lg overflow-hidden aspect-square border border-[#1E3A5F]">
                     <img src={src} alt={`Preview ${idx + 1}`} className="w-full h-full object-cover" />
                     <button
                       type="button"

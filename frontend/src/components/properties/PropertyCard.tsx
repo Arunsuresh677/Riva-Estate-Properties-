@@ -30,7 +30,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 
   return (
     <Link to={`/property/${id}`} className="block">
-      <div className="bg-white border border-[#E6E0DA] rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer">
+      <div className="bg-[#0D1B35] border border-[#1E3A5F] rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer">
       {/* Image Container */}
       <div className="relative aspect-[340/240] overflow-hidden">
         <img 
@@ -85,7 +85,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         </div>
 
         {/* Name */}
-        <h3 className="font-syne text-lg text-[#221410] mb-1">
+        <h3 className="font-syne text-lg text-white mb-1">
           {name}
         </h3>
 
@@ -100,12 +100,12 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         </div>
 
         {/* Specs */}
-        <div className="flex items-center gap-4 pb-4 border-b border-[#E6E0DA]">
+        <div className="flex items-center gap-4 pb-4 border-b border-[#1E3A5F]">
           <div className="flex items-center gap-1.5">
             <span className="material-icons text-[#6B7280] text-lg">
               bed
             </span>
-            <span className="font-manrope font-extralight text-sm text-[#221410]">
+            <span className="font-manrope font-extralight text-sm text-[#CBD5E1]">
               {beds} Beds
             </span>
           </div>
@@ -113,7 +113,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             <span className="material-icons text-[#6B7280] text-lg">
               bathtub
             </span>
-            <span className="font-manrope font-extralight text-sm text-[#221410]">
+            <span className="font-manrope font-extralight text-sm text-[#CBD5E1]">
               {baths} Baths
             </span>
           </div>
@@ -121,7 +121,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             <span className="material-icons text-[#6B7280] text-lg">
               square_foot
             </span>
-            <span className="font-manrope font-extralight text-sm text-[#221410]">
+            <span className="font-manrope font-extralight text-sm text-[#CBD5E1]">
               {sqft.toLocaleString()} sqft
             </span>
           </div>
@@ -133,7 +133,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             {tags.map((tag, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-[#F8F6F6] border border-[#E6E0DA] rounded-full font-manrope font-extralight text-xs text-[#6B7280] uppercase tracking-wide"
+                className="px-3 py-1 bg-[#1E3A5F] border border-[#2A4A70] rounded-full font-manrope font-extralight text-xs text-[#94A3B8] uppercase tracking-wide"
               >
                 {tag}
               </span>

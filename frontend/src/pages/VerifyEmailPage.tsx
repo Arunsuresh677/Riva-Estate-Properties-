@@ -51,16 +51,16 @@ const VerifyEmailPage: React.FC = () => {
         <AuthHeader />
 
         {/* Card */}
-        <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-xl">
+        <div className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-8 shadow-xl">
           {status === 'loading' && (
             <div className="text-center py-8">
               <div className="w-16 h-16 bg-[#FFF7ED] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Loader className="w-8 h-8 text-[#D4755B] animate-spin" />
               </div>
-              <h1 className="font-syne font-bold text-2xl text-[#221410] mb-3">
+              <h1 className="font-syne font-bold text-2xl text-white mb-3">
                 Verifying Your Email
               </h1>
-              <p className="font-manrope font-extralight text-sm text-[#4B5563]">
+              <p className="font-manrope font-extralight text-sm text-[#94A3B8]">
                 Please wait while we verify your email address...
               </p>
             </div>
@@ -71,10 +71,10 @@ const VerifyEmailPage: React.FC = () => {
               <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-8 h-8 text-green-500" />
               </div>
-              <h1 className="font-syne font-bold text-2xl text-[#221410] mb-3">
+              <h1 className="font-syne font-bold text-2xl text-white mb-3">
                 Email Verified!
               </h1>
-              <p className="font-manrope font-extralight text-sm text-[#4B5563] mb-6">
+              <p className="font-manrope font-extralight text-sm text-[#94A3B8] mb-6">
                 {message}
               </p>
               <p className="font-manrope text-xs text-[#9CA3AF] mb-6">
@@ -94,10 +94,10 @@ const VerifyEmailPage: React.FC = () => {
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
                 <XCircle className="w-8 h-8 text-red-500" />
               </div>
-              <h1 className="font-syne font-bold text-2xl text-[#221410] mb-3">
+              <h1 className="font-syne font-bold text-2xl text-white mb-3">
                 Verification Failed
               </h1>
-              <p className="font-manrope font-extralight text-sm text-[#4B5563] mb-6">
+              <p className="font-manrope font-extralight text-sm text-[#94A3B8] mb-6">
                 {message}
               </p>
               <div className="space-y-3">

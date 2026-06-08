@@ -26,13 +26,13 @@ const SignInPage: React.FC = () => {
         <AuthHeader />
 
         {/* Sign In Card */}
-        <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-xl">
+        <div className="bg-[#0D1B35] border border-[#1E3A5F] rounded-2xl p-8 shadow-xl">
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="font-syne font-bold text-3xl text-[#221410] mb-2">
+            <h1 className="font-syne font-bold text-3xl text-white mb-2">
               Welcome Back
             </h1>
-            <p className="font-manrope font-extralight text-sm text-[#4B5563]">
+            <p className="font-manrope font-extralight text-sm text-[#94A3B8]">
               Sign in to access your account
             </p>
           </div>
